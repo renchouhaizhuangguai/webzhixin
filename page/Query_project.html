@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>绑定手机</title>
+    <!--showmessage-->
+    <link rel="stylesheet" href="../assets/wechat/css/animate.css">
+    <link rel="stylesheet" href="../assets/wechat/css/rem.css">
+    <link rel="stylesheet" href="../assets/wechat/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../assets/wechat/css/personal_see.css">
+
+</head>
+<body>
+
+<div id="see_personal" class="query_per">
+    <div class="query_personal">
+        <div class="query_title">
+            <i class="iconfont icon-xingming"></i>
+            <span>被查询人信息</span>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="请输入姓名">
+        </div>
+        <div class="input">
+            <input type="text" placeholder="请输入手机号">
+        </div>
+        <div class="input">
+            <input type="text" placeholder="请输入身份证号码">
+        </div>
+    </div>
+
+    <div class="query_personal">
+        <div class="query_title">
+            <i class="iconfont icon-02"></i>
+            <span>调查项目选择</span>
+        </div>
+
+        <div class="project_list">
+            <ul>
+                <li>
+                    <input type="checkbox" disabled checked>
+                    <div class="check">
+                        <div class="project_left">
+                            <div class="left_box"></div>
+                        </div>
+                        <div class="project_right">
+                            <h4>实名认证（必选）</h4>
+                            <p>姓名、身份证、手机号信息一致性，覆盖三大运营商</p>
+                        </div>
+                        <div class="check_title">免费</div>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <div class="check">
+                        <div class="project_left">
+                            <div class="left_box"></div>
+                        </div>
+                        <div class="project_right">
+                            <h4>国内高等学历</h4>
+                            <p>国内个人最新高等教育学历、学历类型、毕业结论等信息</p>
+                        </div>
+                        <div class="check_title">5元</div>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <div class="check">
+                        <div class="project_left">
+                            <div class="left_box"></div>
+                        </div>
+                        <div class="project_right">
+                            <h4>职业资格信息</h4>
+                            <p>在人力资源和社会保障部门登记的职业资格信息</p>
+                        </div>
+                        <div class="check_title">10元</div>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <div class="check">
+                        <div class="project_left">
+                            <div class="left_box"></div>
+                        </div>
+                        <div class="project_right">
+                            <h4>会计证</h4>
+                            <p>在人力资源和社会保障部门登记的职业资格信息</p>
+                        </div>
+                        <div class="check_title">10元</div>
+                    </div>
+                </li>
+
+                <li>
+                    <input type="checkbox">
+                    <div class="check">
+                        <div class="project_left">
+                            <div class="left_box"></div>
+                        </div>
+                        <div class="project_right">
+                            <h4>个人工商记录</h4>
+                            <p>个人担任法人、股东、高管、失信被执行、行政处罚等信息</p>
+                        </div>
+                        <div class="check_title">30元</div>
+                    </div>
+                </li>
+
+                <li>
+                    <input type="checkbox">
+                    <div class="check">
+                        <div class="project_left">
+                            <div class="left_box"></div>
+                        </div>
+                        <div class="project_right">
+                            <h4>个人综合风险信息</h4>
+                            <p>严重违法、法院涉诉、潜在风险、信贷逾期、多头借贷</p>
+                        </div>
+                        <div class="check_title">20元</div>
+                    </div>
+                </li>
+
+                <li>
+                    <input type="checkbox">
+                    <div class="check">
+                        <div class="project_left">
+                            <div class="left_box"></div>
+                        </div>
+                        <div class="project_right">
+                            <h4>个人不良记录</h4>
+                            <p>在逃、前科、吸毒、涉毒</p>
+                        </div>
+                        <div class="check_title">10元</div>
+                    </div>
+                </li>
+
+                <li>
+                    <input type="checkbox" disabled>
+                    <div class="check">
+                        <div class="project_left" style="opacity: 0">
+                            <div class="left_box"></div>
+                        </div>
+                        <div class="project_right">
+                            <h4>工作履历认证</h4>
+                            <p>手机端暂不支持，请登录www.hrzhixin.com 进行认证</p>
+                        </div>
+                        <div class="check_title">2元</div>
+                    </div>
+                </li>
+
+                <li>
+                    <input type="checkbox" disabled>
+                    <div class="check">
+                        <div class="project_left" style="opacity: 0">
+                            <div class="left_box"></div>
+                        </div>
+                        <div class="project_right">
+                            <h4>个人负面信息实时监控</h4>
+                            <p>手机端暂不支持，请登录www.hrzhixin.com 进行认证 拷贝</p>
+                        </div>
+                        <div class="check_title" style="font-size: 0.2rem">20元/月</div>
+                    </div>
+                </li>
+            </ul>
+            <div class="Agree">
+                <input type="checkbox">
+                <i></i>
+                <p>请仔细阅读并同意 <a href="">《职信网客户服务协议》</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="query_submit">
+        <p><i class="iconfont icon-jiageprice1-copy"></i><span class="money">价格：<strong>￥985</strong></span> <span class="text">（被查询人短信授权后查看报告时付款)</span></p>
+        <button class="_gradient Send_out">发送查询申请</button>
+    </div>
+</div>
+</body>
+</html>
+<script src="../assets/wechat/js/jquery-1.9.1.min.js"></script>
+<!--showmessage-->
+<script src="../assets/wechat/js/toast.js"></script>
+<!--公共js-->
+<script src="../assets/wechat/js/public.js"></script>

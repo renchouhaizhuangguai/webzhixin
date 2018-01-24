@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+section > .head {
+    width: 100%;
+    height: 2.22rem;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+section > .head .head_box {
+    width: 1.22rem;
+    height: 1.22rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-top: 0.5rem;
+    margin-left: 0.4rem;
+    position: relative;
+    background-size:100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+section > .head .head_box .v {
+    width: 0.32rem;
+    height: 0.32rem;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    bottom: 0;
+    right: 0;
+    background: #ff0033;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content:center;
+    justify-content:center;
+    -moz-box-pack:center;
+    -webkit--moz-box-pack:center;
+    box-pack:center;
+
+    align-items:center;
+    -webkit-align-items:center;
+    box-align:center;
+    -moz-box-align:center;
+    -webkit-box-align:center;
+}
+
+section > .head .head_box .v > img {
+    display: block;
+    width: 0.15rem;
+    height: 0.15rem;
+}
+
+section > .head .name {
+    margin-left: 0.5rem;
+    color: #fff;
+}
+
+section > .head .name h4 {
+    font-size: 0.4rem;
+    margin-top: 0.55rem;
+}
+
+section > .head .name p {
+    font-size: 0.27rem;
+    margin-top: 0.25rem;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+section > .head .name p span {
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-right: 0.3rem;
+}
+
+section > .head .name p i {
+    display: block;
+    width: 1px;
+    height: 0.27rem;
+    background: #fff;
+    margin-top: 0.03rem;
+    margin-left: 0.3rem;
+}
+
+section > .head .report {
+    width: 1.6rem;
+    height: 0.6rem;
+    background: rgba(252,114,94,0.8);
+    text-align: center;
+    line-height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+section > .head .report span {
+    font-size: 0.26rem;
+    color: #fff;
+}
+
+section > .public {
+    width: 100%;
+    height: auto;
+    margin-bottom:0.2rem;
+}
+
+section > .public .public_top {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.1rem;
+    padding-left: 0.4rem;
+    color: #666;
+    background: #f5f5f5;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items:center;
+    -webkit-align-items:center;
+    box-align:center;
+    -moz-box-align:center;
+    -webkit-box-align:center;
+    position: relative;
+}
+
+section > .public .public_top .iconfont {
+    display: block;
+    height:0.3rem;
+    margin-right: 0.2rem;
+    font-size: 0.35rem;
+    line-height: 0.3rem;
+}
+section > .public .public_top .icon-icon1{
+    font-size: 0.4rem;
+    color: #bdbdbd;
+    position: absolute;
+    top:0;
+    right:0.3rem;
+    bottom:0;
+    margin:auto;
+    transition:all 0.3s ease;
+}
+section > .public .public_top .icon-icon1.active{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); 	/* IE 9 */
+    -moz-transform:rotate(180deg); 	/* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg); 	/* Opera */
+}
+section > .public .public_top span {
+    font-size: 0.22rem;
+}
+
+section > .public ul {
+    width: 100%;
+    height: auto;
+    padding-left: 0.4rem;
+    padding-bottom: 0.4rem;
+    position: relative;
+    background-size: 2rem 1.6rem;
+    background-repeat: no-repeat;
+    background-position: 5.11rem center;
+}
+section > .public ul .baseline {
+    align-items: baseline;
+}
+
+section > .public ul li {
+    width: 100%;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    align-items:center;
+    -webkit-align-items:center;
+    box-align:center;
+    -moz-box-align:center;
+    -webkit-box-align:center;
+    font-size: 0.2rem;
+    color: #999;
+    margin-top: 0.4rem;
+    position: relative;
+}
+
+section > .public ul li:nth-of-type(1) {
+    margin-top: 0;
+}
+
+section > .public ul li .left {
+    display: inline-block;
+    width: 1.1rem;
+    height: 0.32rem;
+    font-size: 0.26rem;
+    color: #999;
+    text-align: justify;
+}
+
+section > .public ul li .left::after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+section > .public ul li .content {
+    font-size: 0.26rem;
+    color: #333;
+    margin-left: 0.25rem;
+}
+
+section > .public ul li .br {
+    width: 5.14rem;
+}
+
+section > .public ul li strong {
+    color: #666;
+}
+
+section > .public ul li img {
+    display: block;
+    width: 0.3rem;
+    margin-left: 0.18rem;
+}
+
+section > .public ul li h4 {
+    font-size: 0.26rem;
+    color: #333;
+}
+
+section > .public ul li label {
+    color: #ff0000;
+    margin-left: 0.18rem;
+}
+
+section > .public ul li .label {
+    position: absolute;
+    color: #ff0000;
+    margin-left: 0;
+    left: 0;
+    top: 0.4rem;
+}
+
+section > .public ul li .p_content {
+    font-size: 0.26rem;
+    color: #333;
+    width: 6.7rem;
+}
+
+section > .public ul li .p_content img {
+    display: inline-block;
+}
+
+section .footer {
+    width: 100%;
+    padding-top: .2rem;
+    background: #f5f5f5;
+    height: auto;
+}
+
+section .footer .footer_box {
+    width: 100%;
+    background: #fff;
+    height: 1.5rem;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content:center;
+    justify-content:center;
+    -moz-box-pack:center;
+    -webkit--moz-box-pack:center;
+    box-pack:center;
+    align-items:center;
+    -webkit-align-items:center;
+    box-align:center;
+    -moz-box-align:center;
+    -webkit-box-align:center;
+}
+
+section .footer .footer_box img {
+    display: block;
+    width: 1.5rem;
+    height: 0.64rem;
+    margin-right: 0.2rem;
+}
+
+section .footer .footer_box span {
+    font-size: 0.22rem;
+    color: #000;
+}
+
+
+section > .public .School_content{
+    width: 100%;
+    height:0;
+    overflow: hidden;
+    transition:all 0.3s ease;
+    position: relative;
+}
+section > .public .School_content .Verification{
+    display: block;
+    width: 2rem;
+    height:1.6rem;
+    position: absolute;
+    right:0.4rem;
+    top:0.4rem;
+}
+section > .public .School_content.active{
+    height:auto;
+    padding-top: 0.4rem;
+}
+section > .public > .School:nth-of-type(1) > .top {
+    display: none;
+}
+
+section > .public > .School > .top {
+    width: 6.7rem;
+    height: 1px;
+    background: #ebebeb;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+}
+
+section > .public > .School_content>.School > li > .red_box {
+    width: 0.1rem;
+    height: 0.28rem;
+    background: #ff0000;
+    margin-right: 0.2rem;
+}
+section > .public > .School_content>.School > li>p.null{
+    font-size: 0.28rem;
+    color: #999;
+    width: 6.7rem;
+}
+section > .public > .School_content>.School > li > .Title {
+    color: #333;
+    font-weight: bold;
+}
+
+section > .public >.School_content> .School {
+    overflow: hidden;
+}
+
+section > .public > .School_content>.School .style {
+    width: 2rem;
+    height: 0.6rem;
+    box-shadow: 0 0 0.1rem 0.01rem rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    color: #000;
+    font-size: 0.22rem;
+    float: left;
+    margin-right: 0.35rem;
+}
+
+section > .public > .School_content>.School .projects {
+    width: 6.7rem;
+    height: 0.6rem;
+    background: #fff;
+    box-shadow: 0 0 0.1rem 0.01rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.05rem;
+    justify-content: center;
+}
+
+section > .public > .School_content>.School .projects img {
+    margin-left: 0;
+    margin-right: 0.2rem;
+}
+
+section > .public >.School_content> .School .projects h3 {
+    color: #000;
+}
+
+section > .public >.School_content> .School .shiming {
+    justify-content: center;
+}
+
+section > .public > .School_content>.School .shiming h3 {
+    color: #000;
+}
+
+section > .public >.School_content> .School .Comprehensive {
+    height: 1.9rem;
+    align-items: baseline;
+}
+
+section > .public > .School_content>.School .Comprehensive img {
+    width: 0.37rem;
+    margin-left: 0;
+}
+
+section > .public > .School_content> .School .Comprehensive h5 {
+    color: #333;
+    position: absolute;
+    top: 0.03rem;
+    left: 0.62rem;
+}
+
+section > .public >  .School_content>.School .Comprehensive p {
+    position: absolute;
+    height: 1.2rem;
+    width: 6.7rem;
+    background: #fff;
+    box-shadow: 0 0 0.1rem 0.01rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.07rem;
+    bottom: 0.05rem;
+    padding: 0.2rem 0.38rem;
+    padding-bottom: 0;
+}
+
+section > .public >  .School_content>.School .schedule {
+    display: block;
+    width: 4.7rem;
+    height: 0.12rem;
+    border-radius: 0.1rem;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    position: relative;
+    margin-left: 0.3rem;
+}
+
+section > .public > .School_content> .School .schedule i {
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 0.1rem;
+    left: 0;
+    top: 0;
+    background: #ff0000;
+    border-radius: 0.1rem;
+}

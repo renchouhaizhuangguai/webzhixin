@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>绑定手机</title>
+    <link rel="stylesheet" href="../assets/wechat/css/animate.css">
+    <link rel="stylesheet" href="../assets/wechat/css/rem.css">
+    <link rel="stylesheet" href="../assets/wechat/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../assets/wechat/css/Apply_card.css">
+</head>
+<body>
+
+<div id="zx_Application">
+    <div class="real_App">
+        <div class="app_head">
+            <img src="../assets/wechat/img/real_app.png" alt="">
+            <span>请确认手机号、姓名、证件信息一致，否则无法通过实名认证</span>
+        </div>
+        <div class="app_content">
+            <div class="input">
+                <input type="text" placeholder="请输入姓名">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="请输入手机号" >
+            </div>
+            <div class="input">
+                <input type="text" placeholder="请输入身份证号码" >
+            </div>
+        </div>
+        <div class="app_foot">
+            <button id="btn" class="_gradient">立即认证</button>
+        </div>
+    </div>
+</div>
+<!--模态款-->
+<div id="Attention">
+    <div class="position_init">
+        <img src="../assets/wechat/img/position_ok1.png" alt="">
+        <h4>实名认证成功</h4>
+        <a href="" class="_gradient btn">返回首页</a>
+        <div class="position_xx">
+            <i class="iconfont icon-iconfontguanbi"></i>
+        </div>
+    </div>
+    <div class="real_name_fail">
+        <img src="../assets/wechat/img/Real_name_fail.png" alt="">
+        <h4><span>手机与真实姓名不符</span>认证未通过</h4>
+        <p>您今天还有1次机会重新实名认证或 上传授权书通过验证</p>
+        <a href="" class="_gradient btn">重新认证</a>
+        <div class="position_xx">
+            <i class="iconfont icon-iconfontguanbi"></i>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<script src="../assets/wechat/js/jquery-1.9.1.min.js"></script>
+<!--showmessage-->
+<script src="../assets/wechat/js/toast.js"></script>
+<!--公共-->
+<script src="../assets/wechat/js/public.js"></script>
+<script>
+    $(function () {
+        var btn=$('#btn');
+        var module=new Module();
+        module.init('fail');
+        module.init('position');
+        var num=1;
+        btn.on('click',function () {
+            //认证成功调用
+            module.Appear('fail');
+            //认证失败调用
+//            module.Appear('position');
+        });
+    })
+</script>

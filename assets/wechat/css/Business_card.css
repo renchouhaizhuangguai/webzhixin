@@ -1,0 +1,530 @@
+.Bulk.edit{
+    padding-top:0;
+}
+.Bulk .busin_head {
+    width: 100%;
+    height: 1.2rem;
+    background: #fc745e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Bulk .busin_head .iconfont {
+    display: block;
+    font-size: 0.45rem;
+    margin-right: 0.3rem;
+    color: #fff;
+}
+
+.Bulk .busin_head span {
+    font-size: 0.26rem;
+    color: #fff;
+}
+
+.Bulk .busin_body {
+    width: 100%;
+    height: auto;
+    padding: .2rem;
+    background: #ededed;
+}
+
+.Bulk .busin_body ul {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 0.15rem;
+    background: #fff;
+    box-shadow: 0 0 0.1rem 0.01rem rgba(0, 0, 0, 0.2);
+    padding: 0.3rem;
+    padding-top: 0.4rem;
+}
+
+.Bulk .busin_body ul .ul_image {
+    position: absolute;
+    left: 0.3rem;
+    top: -0.07rem;
+    width: 1.6rem;
+    display: block;
+}
+
+.Bulk .busin_body ul .ul_name {
+    display: block;
+    width: 1.6rem;
+    position: absolute;
+    top: -0.07rem;
+    left: 0.3rem;
+    text-align: center;
+    line-height: 0.5rem;
+    height: 0.5rem;
+    font-size: 0.22rem;
+    color: #fff;
+}
+
+.Bulk .busin_body ul .input_file {
+    -webkit-box-pack:justify;
+    -webkit-justify-content:space-between;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+}
+
+.Bulk .busin_body ul .input_file .right {
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items:center;
+    -webkit-align-items:center;
+    box-align:center;
+    -moz-box-align:center;
+    -webkit-box-align:center;
+}
+
+.Bulk .busin_body ul .input_file .file {
+    width: 0.77rem;
+    height: 0.77rem;
+    border-radius: 50%;
+    margin-right: 0.2rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.Bulk .busin_body ul .input_file .right_img {
+    display: block;
+    width: 0.13rem;
+}
+
+.Bulk .busin_body ul li {
+    width: 100%;
+    height: 1rem;
+    border-bottom: 1px solid #ededed;
+    font-size: 0.24rem;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items:center;
+    -webkit-align-items:center;
+    box-align:center;
+    -moz-box-align:center;
+    -webkit-box-align:center;
+}
+.Bulk .busin_body ul li.delete_call{
+    width: 0.4rem;
+    height:0.4rem;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 0.4rem;
+    background: #fc725e;
+    position: absolute;
+    top:0.3rem;
+    right:0.3rem;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content:center;
+    justify-content:center;
+    -moz-box-pack:center;
+    -webkit--moz-box-pack:center;
+    box-pack:center;
+
+    align-items:center;
+    -webkit-align-items:center;
+    box-align:center;
+    -moz-box-align:center;
+    -webkit-box-align:center;
+    overflow: hidden;
+    transition:all 0.3s ease;
+    z-index: 100;
+}
+.Bulk .busin_body ul li.delete_call.active{
+    width: 1rem;
+    border-radius: 0.3rem;
+}
+.Bulk .busin_body ul li.delete_call.active span{
+    display: block;
+}
+.Bulk .busin_body ul li.delete_call.active .iconfont{
+    transform:rotate(-180deg);
+    -ms-transform:rotate(-180deg);	/* IE 9 */
+    -moz-transform:rotate(-180deg); 	/* Firefox */
+    -webkit-transform:rotate(-180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-180deg); 	/* Opera */
+    opacity: 0;
+    height:0;
+    overflow: hidden;
+}
+.Bulk .busin_body ul li.delete_call .iconfont{
+    font-size: 0.2rem;
+    transition:all 0.3s ease;
+}
+.Bulk .busin_body ul li.delete_call span{
+    font-size: 0.2rem;
+    color: #fff;
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    text-align: center;
+}
+.Bulk .busin_body ul li .justify {
+    display: block;
+    width: 1.12rem;
+    height: 0.3rem;
+    text-align: justify;
+}
+
+.Bulk .busin_body ul li .justify::after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.Bulk .busin_body ul li input {
+    outline: none;
+    border: 0;
+    padding-left: 0.42rem;
+    display: block;
+    margin-top: 0.03rem;
+    font-size: 0.2rem;
+    color: #000;
+}
+
+.Bulk .busin_body ul li .phone {
+    padding-left: 0.4rem;
+    font-size: 0.2rem;
+    color: #000;
+}
+
+.Bulk .busin_body .company {
+    margin-top: 0.28rem;
+}
+
+.Bulk .bottom {
+    background: #ededed;
+    padding-top: 0.01rem;
+    padding-bottom: 0.3rem;
+}
+
+.Bulk .busin_foot {
+    width: 7.1rem;
+    height: 1rem;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items:center;
+    -webkit-align-items:center;
+    box-align:center;
+    -moz-box-align:center;
+    -webkit-box-align:center;
+    -webkit-justify-content:center;
+    justify-content:center;
+    -moz-box-pack:center;
+    -webkit--moz-box-pack:center;
+    box-pack:center;
+    background: #fff;
+    border-radius: 0.15rem;
+    cursor: pointer;
+    margin: 0 auto;
+    box-shadow: 0 0 0.1rem 0.01rem rgba(0, 0, 0, 0.2);
+}
+
+.Bulk .busin_foot img {
+    display: block;
+    width: 0.3rem;
+    margin-right: 0.18rem;
+}
+
+.Bulk .busin_foot span {
+    font-size: 0.26rem;
+    color: #fc725e;
+}
+
+.Bulk .busin_button {
+    display: block;
+    width: 6rem;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.3rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    color: #fff;
+    background: #fc725e;
+    margin-top: 0.3rem;
+}
+
+
+@charset "UTF-8";
+/* line 6, ../sass/mpicker.scss */
+.hide {
+    display: none;
+}
+
+/* line 9, ../sass/mpicker.scss */
+.mPicker-hide {
+    visibility: hidden;
+}
+
+/* line 15, ../sass/mpicker.scss */
+.mPicker-pr {
+    position: relative;
+}
+
+/* line 19, ../sass/mpicker.scss */
+.mPicker {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+/*遮罩*/
+/* line 32, ../sass/mpicker.scss */
+.mPicker-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    background: #000;
+    opacity: .7;
+}
+
+/*选中的线*/
+/* line 46, ../sass/mpicker.scss */
+.mPicker-active-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    margin-left: -35%;
+    border-top: 1px solid #31b6e7;
+    border-bottom: 1px solid #31b6e7;
+}
+
+/* line 56, ../sass/mpicker.scss */
+.mPicker-main {
+    background: #f5f5f5;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+/* line 71, ../sass/mpicker.scss */
+.mPicker-main.mPicker-bottom {
+    bottom: 0;
+}
+
+/* line 75, ../sass/mpicker.scss */
+.mPicker-main.mPicker-modal {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    width: 264px;
+    top: 50%;
+    bottom: auto;
+    left: 50%;
+    margin-top: -127px;
+    margin-left: -132px;
+}
+
+/* line 86, ../sass/mpicker.scss */
+.mPicker-main.down {
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+}
+
+/* line 91, ../sass/mpicker.scss */
+.mPicker-header {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #31b6e7;
+    color: #31b6e7;
+    font-size: 0.2rem;
+}
+
+/* line 101, ../sass/mpicker.scss */
+.mPicker-footer {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    height: 36px;
+    line-height: 36px;
+    position: relative;
+    display: flex;
+}
+
+/* line 109, ../sass/mpicker.scss */
+.mPicker-content {
+    overflow: hidden;
+    z-index: 15;
+    position: relative;
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* line 123, ../sass/mpicker.scss */
+.mPicker-list {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* line 134, ../sass/mpicker.scss */
+.mPicker-content ul {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 20;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* line 144, ../sass/mpicker.scss */
+.mPicker-content li {
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+    color: #333;
+    font-size: 0.2rem;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+/* line 156, ../sass/mpicker.scss */
+.mPicker-content li.active {
+    color: #000;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* line 162, ../sass/mpicker.scss */
+.mPicker-content.level-2 ul {
+    width: 50%;
+}
+
+/*按钮*/
+/* line 169, ../sass/mpicker.scss */
+.mPicker-confirm,
+.mPicker-cancel {
+    display: inline-block;
+    color: #333;
+    font-size: 0.2rem;
+    width: 50%;
+    height:100%;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* line 179, ../sass/mpicker.scss */
+.mPicker-confirm:active, .mPicker-confirm:hover,
+.mPicker-cancel:active,
+.mPicker-cancel:hover {
+    background-color: #29799c;
+    color: #fff;
+}
+
+/* line 186, ../sass/mpicker.scss */
+.mPicker-confirm {
+    display: block;
+    border-right: 1px solid #dbdbdb;
+    background: #31b6e7;
+    color: #fff;
+}
+
+/* line 192, ../sass/mpicker.scss */
+.mPicker-input-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* line 199, ../sass/mpicker.scss */
+.mPicker-shadow {
+    position: absolute;
+    top: 41px;
+    bottom: 38px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: linear-gradient(#282828 0, rgba(40, 40, 40, 0) 52%, rgba(40, 40, 40, 0) 48%, #282828 100%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#282828), color-stop(0.52, rgba(40, 40, 40, 0)), color-stop(0.48, rgba(40, 40, 40, 0)), to(#282828));
+    background: -moz-linear-gradient(#282828 0, rgba(40, 40, 40, 0) 52%, rgba(40, 40, 40, 0) 48%, #282828 100%);
+    background: -o-linear-gradient(#282828 0, rgba(40, 40, 40, 0) 52%, rgba(40, 40, 40, 0) 48%, #282828 100%);
+    background: -webkit-gradient(linear, 0% 100%, 0% 0%, from(whitesmoke), color-stop(0.48, rgba(245, 245, 245, 0)), color-stop(0.52, rgba(245, 245, 245, 0)), to(whitesmoke));
+    pointer-events: none;
+}
+
+
+ol.companys{
+    position: absolute;
+    width:5rem;
+    max-height:0;
+    top:1.38rem;
+    left:1.8rem;
+    z-index: 10;
+    overflow-y: scroll;
+    transition: all 0.3s ease;
+}
+ol.companys.active{
+    max-height:4rem;
+}
+ol.companys>li{
+    width:100%;
+    height:0.8rem;
+    color: #333;
+    font-size: 0.2rem;
+    border-bottom:1px solid #ededed;
+    background: #f9f9f9;
+    overflow: hidden;
+    word-break: normal;
+    display: block;
+    line-height: 0.8rem;
+    padding-left:0.1rem;
+}

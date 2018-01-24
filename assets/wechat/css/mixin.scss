@@ -1,0 +1,177 @@
+@mixin start{
+  margin:0;
+  padding:0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: '微软雅黑';
+}
+
+
+@mixin placeholder{
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ddd;
+  }
+
+  ::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#ddd;
+  }
+
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#ddd;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#ddd;
+  }
+  a {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  }
+
+  input {
+    -webkit-user-modify: read-write-plaintext-only;
+    border: none;
+    outline: medium;
+  }
+
+  input, textarea, button {
+    outline: none;
+    border: 0;
+    resize: none;
+    background: none;
+  }
+}
+
+
+
+
+//弹性盒子兼容
+@mixin flex{
+  display:-webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+//弹性盒子子集元素居中
+@mixin flex_content{
+  display:-webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-justify-content:center;
+  justify-content:center;
+  -moz-box-pack:center;
+  -webkit--moz-box-pack:center;
+  box-pack:center;
+
+  align-items:center;
+  -webkit-align-items:center;
+  box-align:center;
+  -moz-box-align:center;
+  -webkit-box-align:center;
+}
+@mixin flex_between{
+  display:-webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-box-pack:justify;
+  -webkit-justify-content:space-between;
+  -ms-flex-pack:justify;
+  justify-content:space-between;
+
+  align-items:center;
+  -webkit-align-items:center;
+  box-align:center;
+  -moz-box-align:center;
+  -webkit-box-align:center;
+}
+
+@mixin flex_item_center{
+  display:-webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items:center;
+  -webkit-align-items:center;
+  box-align:center;
+  -moz-box-align:center;
+  -webkit-box-align:center;
+}
+
+@mixin flex_ward{
+  display:-webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap:wrap;
+  -webkit-box-lines:multiple;
+  -moz-flex-wrap:wrap;
+  flex-wrap:wrap;
+}
+@mixin position_content{
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+@mixin position_tb{
+  position: absolute;
+  top:0;
+  bottom:0;
+  margin:auto;
+}
+@mixin position_lr{
+  position: absolute;
+  left:0;
+  right:0;
+  margin:auto;
+}
+@mixin background-image{
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  background-position: center center;
+}
+@mixin text_justify{
+  content: '';
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+@mixin clear{
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+//超出部分隐藏...
+@mixin beyond{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin background_gradient{
+  background: #fc725e;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff6666), to(#ff9966));
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff6666), to(#ff9966));
+  background: -webkit-linear-gradient(left, #ff6666, #ff9966);
+  background: -moz-linear-gradient(left, #ff6666, #ff9966);
+  background: -o-linear-gradient(left, #ff6666, #ff9966);
+  background: -ms-linear-gradient(left, #ff6666, #ff9966);
+}
+
+
+
+

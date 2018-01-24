@@ -1,0 +1,326 @@
+@import "mixin";
+.Bulk {
+  width: 100%;
+  height: 100%;
+  padding-top: 1rem;
+}
+
+.Bulk .Apply_img {
+  display: block;
+  margin: 0 auto;
+  width: 1.15rem;
+}
+
+.Bulk .Apply_p1 {
+  font-size: 0.26rem;
+  color: #ccc;
+  text-align: center;
+  margin-top: 0.45rem;
+  position: relative;
+}
+
+.Bulk .Apply_p1::after {
+  content: '';
+  width: 1.2rem;
+  height: 1px;
+  background: #fdb8ae;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.5rem;
+  margin: auto;
+}
+
+.Bulk .Apply_ul {
+  width: 100%;
+  height: auto;
+  margin-top: 1.22rem;
+}
+
+.Bulk .Apply_ul li {
+  width: 6rem;
+  height: 1rem;
+  margin: 0 auto;
+  margin-top: 0.3rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ededed;
+  display: flex;
+  align-items: center;
+  padding-left: 0.4rem;
+}
+
+.Bulk .Apply_ul li .li_img {
+  display: block;
+  width: 0.28rem;
+  margin-right: 0.24rem;
+}
+
+.Bulk .Apply_ul li span {
+  font-size: 0.26rem;
+  color: #ccc;
+}
+
+.Bulk .Apply_ul li .input {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Bulk .Apply_ul li .input .field-user-verifycode,.field-user-telephone{
+  display: flex;
+  align-items: center;
+}
+
+.Bulk .Apply_ul li .input button {
+  width: 1.26rem;
+  height: 0.5rem;
+  border: none;
+  outline: none;
+  border-left: 1px solid #ccc;
+  text-align: center;
+  background: #fff;
+  color: #999;
+}
+
+.Bulk .Apply_ul li input {
+  width: 2.8rem;
+  border: none;
+  outline: none;
+  padding-left: 0.34rem;
+}
+
+.Bulk .Apply_p2 {
+  font-size: 0.18rem;
+  color: #666;
+  padding-left: 0.76rem;
+  margin-top: 0.3rem;
+}
+
+.Bulk .Apply_p2 a {
+  color: #fc725e;
+}
+
+.Bulk .Apply_button {
+  display: block;
+  width: 6rem;
+  height: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  font-size: 0.3rem;
+  color: #fff;
+  background: #fc725e;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff6666), to(#ff9966));
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff6666), to(#ff9966));
+  background: -webkit-linear-gradient(left, #ff6666, #ff9966);
+  background: -moz-linear-gradient(left, #ff6666, #ff9966);
+  background: -o-linear-gradient(left, #ff6666, #ff9966);
+  background: -ms-linear-gradient(left, #ff6666, #ff9966);
+  margin: 0.6rem auto;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+
+#zx_Application{
+  width: 100%;
+  height:100%;
+  background: #fff;
+  padding-top:0.2rem;
+  ul{
+    width: 100%;
+    height:auto;
+    background: #f7f7f7;
+    padding-bottom:0.1rem;
+    li:first-child{
+      margin-top:0;
+    }
+    li{
+      width: 100%;
+      height:auto;
+      margin-top:0.1rem;
+      background: #fff;
+      .li_head{
+        width: 100%;
+        height:1.1rem;
+        padding:0 0.3rem;
+       @include flex_item_center;
+        .left{
+          width: 0.3rem;
+          height:0.3rem;
+          border-radius: 50%;
+          border: 1px solid #fc725e;
+          &.active{
+            background: #fc725e;
+            @include flex_content;
+            &:after{
+              content: '';
+              width: 0.1rem;
+              height:0.1rem;
+              background: #fff;
+              border-radius: 50%;
+            }
+          }
+        }
+        .right{
+          width: calc(100% - 0.6rem);
+          font-size: 0.32rem;
+          color: #333;
+          margin-left:0.2rem;
+          h4{
+            font-weight: bold;
+          }
+          p{
+            font-size: 0.2rem;
+            color: #fc725e;
+            margin-top:0.15rem;
+          }
+        }
+      }
+      .li_content{
+        width: 100%;
+        padding-top:0.01rem;
+        padding-bottom:0.3rem;
+        .input{
+          width:6.9rem;
+          height:0.9rem;
+          margin:0 auto;
+          margin-top:0.3rem;
+          position: relative;
+          &::after{
+            content: "*";
+            color: #fc725e;
+            @include position_tb;
+            right:0.3rem;
+            font-size:0.3rem;
+            line-height: 0.9rem;
+          }
+          input{
+            display: block;
+            width: 6.9rem;
+            height:0.9rem;
+            border-radius: 0.1rem;
+            background: #fff;
+            padding-left:0.5rem;
+            box-shadow: 0 0 0.5rem 0.01rem rgba(0,0,0,0.1);
+          }
+          input::-webkit-input-placeholder { /* WebKit browsers */
+            color: rgba(102,51,51,0.8);
+          }
+
+          input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color: rgba(102,51,51,0.8);
+          }
+
+          input::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color: rgba(102,51,51,0.8);
+          }
+
+          input:-ms-input-placeholder { /* Internet Explorer 10+ */
+            color: rgba(102,51,51,0.8);
+          }
+        }
+
+      }
+    }
+  }
+
+  .btn{
+    width: 100%;
+    height:1.2rem;
+    background: #fff;
+    border-top:1px solid #ededed;
+    @include flex_content;
+    position: fixed;
+    bottom:0;
+    left:0;
+    z-index: 10;
+  }
+  #btn{
+    display: block;
+    width: 6.9rem;
+    height:0.8rem;
+    border-radius: 0.5rem;
+    font-size: 0.32rem;
+    color: #fff;
+  }
+
+  .real_App{
+    width: 100%;
+    height:auto;
+    .app_head{
+      width: 100%;
+      height:0.6rem;
+      padding: 0 0.2rem;
+      @include flex_item_center;
+      background: #fc725e;
+      margin-top:-0.2rem;
+      img{
+        display: block;
+        width: 0.38rem;
+        margin-right:0.2rem;
+      }
+      span{
+        color: #fff;
+        font-size: 0.2rem;
+      }
+    }
+    .app_content{
+      width: 100%;
+      height:auto;
+      padding:0 0.3rem;
+      .input{
+        width: 100%;
+        height:auto;
+        margin-top:0.3rem;
+        position: relative;
+        &:after{
+          content: '*';
+          position: absolute;
+          @include position_tb;
+          right:0.3rem;
+          color: #fc725e;
+          font-size:0.3rem;
+          line-height: 0.9rem;
+        }
+        input{
+          width: 100%;
+          display: block;
+          height:0.9rem;
+          border-radius: 0.1rem;
+          box-shadow: 0 0 0.3rem 0.01rem rgba(0,0,0,0.1);
+          padding-left:0.5rem;
+        }
+        input::-webkit-input-placeholder { /* WebKit browsers */
+          color: rgba(102,51,51,0.8);
+        }
+
+        input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+          color: rgba(102,51,51,0.8);
+        }
+
+        input::-moz-placeholder { /* Mozilla Firefox 19+ */
+          color: rgba(102,51,51,0.8);
+        }
+
+        input:-ms-input-placeholder { /* Internet Explorer 10+ */
+          color: rgba(102,51,51,0.8);
+        }
+      }
+    }
+    .app_foot{
+      width: 100%;
+      height:auto;
+      margin-top:0.4rem;
+      padding:0 0.3rem;
+    }
+  }
+}
+
+
+
+
+
+
+
+

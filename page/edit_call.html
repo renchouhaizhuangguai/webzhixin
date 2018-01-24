@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>绑定手机</title>
+    <link rel="stylesheet" href="../assets/wechat/css/animate.css">
+    <link rel="stylesheet" href="../assets/wechat/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../assets/wechat/css/rem.css">
+    <link rel="stylesheet" href="../assets/wechat/css/Business_card.css">
+    <link rel="stylesheet" href="../assets/wechat/css/public_style.css">
+</head>
+<body>
+<div class="Bulk edit">
+    <div class="busin_head">
+        <i class="iconfont icon-xiangji"></i>
+        <span>拍照生成名片</span>
+    </div>
+    <div class="busin_body">
+        <ul>
+            <img class="ul_image" src="../assets/wechat/img/news_box.png" alt="">
+            <li class="ul_name">个人信息</li>
+            <li class="input_file"><span class="justify">头像</span>
+                <div class="right">
+                    <div class="file" style="background-image: url('../assets/wechat/img/news_head.png')"></div>
+                    <img class="right_img" src="../assets/wechat/img/news_right.png" alt="">
+                </div>
+            </li>
+            <li><span class="justify">姓名</span>：<input type="text" placeholder="请输入您的名字" ></li>
+            <li><span class="justify">英文名</span>：<input type="text" placeholder="请输入您的英文名" ></li>
+            <li><span class="justify">手机</span>：<span class="phone">188888888888</span></li>
+            <li><span class="justify">微信</span>：<input type="text" placeholder="请输入您的微信号" ></li>
+            <li><span class="justify">邮箱</span>：<input type="text" placeholder="请输入您的邮箱号" ></li>
+            <li><span class="justify">个人简介</span>：<input type="text" placeholder="请输入您的简介" ></li>
+        </ul>
+        <ul class="company">
+            <img class="ul_image" src="../assets/wechat/img/news_box.png" alt="">
+            <li class="ul_name">企业信息</li>
+            <li class="component_select">
+                <span class="justify">公司名称</span>：<input type="text" name="companyname" placeholder="请输入公司名" >
+                <ol>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                </ol>
+            </li>
+            <li><span class="justify">品牌名称</span>：<input type="text" placeholder="请输入品牌名称" ></li>
+            <li><span class="justify">部门</span>：<input type="text" placeholder="请输入部门" ></li>
+            <li><span class="justify">岗位</span>：<input type="text" placeholder="请输入岗位" ></li>
+            <li><span class="justify">固话</span>：<input type="text" placeholder="请输入您的固话" ></li>
+            <li><span class="justify">网址</span>：<input type="text" placeholder="请输入网址" ></li>
+            <li><span class="justify">地址</span>：<input type="text"  class="select-value form-control" placeholder="请选择地址" ></li>
+            <li><span class="justify">详细地址</span>：<input type="text" placeholder="请输入详细地址" ></li>
+        </ul>
+    </div>
+    <div class="bottom">
+        <div class="busin_foot">
+            <img src="../assets/wechat/img/news_jia.png" alt="">
+            <span>添加新公司</span>
+        </div>
+        <button class="busin_button">保存</button>
+    </div>
+</div>
+</body>
+</html>
+<script src="../assets/wechat/js/jquery-1.9.1.min.js"></script>
+<!--showmessage-->
+<script src="../assets/wechat/js/toast.js"></script>
+
+<!--地区三级联动-->
+<script src="../assets/wechat/js/json.js"></script>
+<script src="../assets/wechat/js/jsonExchange.js"></script>
+<script src="../assets/wechat/js/mPickerBeta.js"></script>
+
+<!--公共部分-->
+<script src="../assets/wechat/js/public.js"></script>
+<script>
+    $(function () {
+        var busin_body=$('.busin_body');
+        var busin_foot=$('.busin_foot');
+        //三级
+        render(busin_body);
+        //下拉
+        select();
+        //删除名片
+        delete_call(busin_body);
+        //是否出现添加新公司
+        length(busin_body);
+
+        function length(el) {
+            if(el.find('.company').length>=5){
+                busin_foot.hide();
+            }else{
+                busin_foot.show();
+            }
+        }
+
+        var company="<ul class=\"company\">\n" +
+            "            <img class=\"ul_image\" src=\"../assets/wechat/img/news_box.png\" alt=\"\">\n" +
+            "            <li class=\"ul_name\">企业信息</li>\n" +
+            "            <li class=\"delete_call\">\n" +
+            "                <span>删除</span>\n" +
+            "                <i class=\"iconfont icon-iconfontguanbi\"></i>\n" +
+            "            </li>\n" +
+            "            <li class=\"component_select\">\n" +
+            "                <span class=\"justify\">公司名称</span>：<input type=\"text\" name=\"companyname\" placeholder=\"请输入公司名\" >\n" +
+            "                <ol>" +
+            "<li>1</li>\n" +
+            "                    <li>1</li>\n" +
+            "                    <li>1</li>\n" +
+            "                    <li>1</li>\n" +
+            "                    <li>1</li>\n" +
+            "                    <li>1</li>\n" +
+            "                    <li>1</li></ol>\n" +
+            "            </li>\n" +
+            "            <li><span class=\"justify\">品牌名称</span>：<input type=\"text\" placeholder=\"请输入品牌名称\" ></li>\n" +
+            "            <li><span class=\"justify\">部门</span>：<input type=\"text\" placeholder=\"请输入部门\" ></li>\n" +
+            "            <li><span class=\"justify\">岗位</span>：<input type=\"text\" placeholder=\"请输入岗位\" ></li>\n" +
+            "            <li><span class=\"justify\">固话</span>：<input type=\"text\" placeholder=\"请输入您的固话\" ></li>\n" +
+            "            <li><span class=\"justify\">网址</span>：<input type=\"text\" placeholder=\"请输入网址\" ></li>\n" +
+            "            <li><span class=\"justify\">地址</span>：<input type=\"text\"  class=\"select-value form-control\" placeholder=\"请选择地址\" ></li>\n" +
+            "            <li><span class=\"justify\">详细地址</span>：<input type=\"text\" placeholder=\"请输入详细地址\" ></li>\n" +
+            "        </ul>";
+        busin_foot.on('click',function () {
+            busin_body.append(company);
+            //三级
+            render(busin_body);
+            //下拉
+            select();
+            //删除名片
+            delete_call(busin_body);
+            //是否出现添加新公司
+            length(busin_body);
+        });
+        //删除名片
+        function delete_call(el){
+            var delete_call=el.find('.delete_call');
+            delete_call.each(function (i,v) {
+                $(v).bind('click',function () {
+                    delete_call.removeClass('active');
+                    $(this).addClass('active');
+                });
+                $(v).find('span').on('click',function () {
+                    //删除名片在此调用ajax
+                    $(this).parents('.company').remove();
+                    length(el)
+                })
+            });
+
+        }
+    });
+
+
+
+
+    //地区三级联动
+    function render(el) {
+        el.find('.company').each(function (i,v) {
+            $(v).find('.select-value').mPicker({
+                level:3,
+                dataJson: city3,
+                Linkage:true,
+                rows:6,
+                idDefault:true,
+                splitStr:'-',
+                header:'<div class="mPicker-header">地区选择</div>',
+                confirm:function(){
+                    console.info('【json里有不带value时】');
+                    console.info('选中的id序号为：',$('.select-value').data('id1')+'-'+$('.select-value').data('id2')+'-'+$('.select-value').data('id3'));
+                    var id1= $(v).find('.select-value').data('id1');
+                    var id2 = $(v).find('.select-value').data('id2');
+                    var id3 = $(v).find('.select-value').data('id3');
+                    console.info('第一列json：',city3[id1]);
+                    console.info('第二列json：', city3[id1].child[id2]);
+                    console.info('第三列json：', city3[id1].child[id2].child[id3]);
+                },
+                cancel:function(){
+                    console.info('返回之前的id序号：',$('.select-value').data('id1')+'-'+$('.select-value').data('id2')+'-'+$('.select-value').data('id3'));
+                }
+            })
+            //获取mpicker实例
+            var method= $('.select-value').data('mPicker');
+            console.info('第一个mpicker的实例为：',method);
+        })
+    }
+</script>

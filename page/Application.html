@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>绑定手机</title>
+    <link rel="stylesheet" href="../assets/wechat/css/animate.css">
+    <link rel="stylesheet" href="../assets/wechat/css/rem.css">
+    <link rel="stylesheet" href="../assets/wechat/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../assets/wechat/css/Apply_card.css">
+</head>
+<body>
+
+<div id="zx_Application">
+    <ul>
+        <li>
+            <div class="li_head">
+                <div class="left active"></div>
+                <div class="right">
+                    <h4>上海履途网络科技有限公司</h4>
+                    <p>贵公司尚未注册，请填写人事负责人信息，以便完成认证！</p>
+                </div>
+            </div>
+            <div class="li_content">
+                <div class="input">
+                    <input type="text" placeholder="请输入人事负责人姓名" >
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="请输入人事负责人电话" >
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="li_head">
+                <div class="left"></div>
+                <div class="right">
+                    <h4>上海履途网络科技有限公司</h4>
+                    <p>贵公司尚未注册，请填写人事负责人信息，以便完成认证！</p>
+                </div>
+            </div>
+            <div class="li_content">
+                <div class="input">
+                    <input type="text" placeholder="请输入人事负责人姓名" >
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="请输入人事负责人电话" >
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="li_head">
+                <div class="left"></div>
+                <div class="right">
+                    <h4>上海履途网络科技有限公司</h4>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="btn">
+        <button id="btn" class="_gradient">立即申请</button>
+    </div>
+</div>
+<!--模态款-->
+<div id="Attention">
+   <div class="position_init">
+       <img src="../assets/wechat/img/position_ok1.png" alt="">
+       <h4>申请成功</h4>
+       <a href="" class="_gradient btn">返回首页</a>
+       <div class="position_xx">
+           <i class="iconfont icon-iconfontguanbi"></i>
+       </div>
+   </div>
+</div>
+
+</body>
+</html>
+<script src="../assets/wechat/js/jquery-1.9.1.min.js"></script>
+<!--showmessage-->
+<script src="../assets/wechat/js/toast.js"></script>
+<!--公共-->
+<script src="../assets/wechat/js/public.js"></script>
+<script>
+    $(function () {
+        var li_left= $('#zx_Application').find('li .li_head .left');
+        li_left.on('click',function () {
+            if($(this).hasClass('active')){
+                $(this).removeClass('active');
+            }else{
+                $(this).addClass('active');
+            }
+        })
+
+        var btn=$('#btn');
+        var module=new Module();
+        module.init('position');
+        btn.on('click',function () {
+            module.Appear('position');
+        })
+
+    })
+</script>

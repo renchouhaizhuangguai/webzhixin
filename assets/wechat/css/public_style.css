@@ -1,0 +1,1185 @@
+.Bulk {
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+}
+
+.Bulk.Perfect {
+    padding-top: 0.6rem;
+}
+
+.Bulk .Perfect_box {
+    width: 100%;
+    height: auto;
+}
+
+.Bulk .Perfect_box .Perfect_name {
+    text-align: center;
+    font-size: 0.3rem;
+    color: #333;
+}
+
+.Bulk .Perfect_box .Perfect_ul {
+    margin-top: 0.6rem;
+}
+
+.Bulk .Apply_img {
+    display: block;
+    margin: 0 auto;
+    width: 1.15rem;
+}
+
+.Bulk .Apply_p1 {
+    font-size: 0.26rem;
+    color: #ccc;
+    text-align: center;
+    margin-top: 0.45rem;
+    position: relative;
+}
+
+.Bulk .Apply_p1::after {
+    content: '';
+    width: 0.5rem;
+    height: 2px;
+    background: #fc725e;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.5rem;
+    margin: auto;
+}
+
+.Bulk .Apply_ul {
+    width: 100%;
+    height: auto;
+    margin-top: 1.22rem;
+}
+
+.Bulk .Apply_ul li {
+    width: 6rem;
+    height: 1rem;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ededed;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    padding-left: 0.4rem;
+}
+
+.component_select {
+    position: relative;
+}
+
+.component_select ol {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0.5rem 0.01rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 200;
+}
+
+.component_select ol.active {
+    height: 4rem;
+    overflow-y: scroll;
+}
+
+.component_select ol::-webkit-scrollbar {
+    display: none;
+}
+
+.component_select ol li {
+    width: 100%;
+    height: 0.8rem;
+    padding: 0 0.3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.3rem;
+    color: #333;
+    text-align: center;
+    line-height: 0.8rem;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #ededed;
+    margin: 0;
+}
+
+.Bulk .Apply_ul li .iconfont {
+    display: inline-block;
+    margin-right: 0.24rem;
+    font-size: 0.4rem;
+    color: #ccc;
+}
+
+.Bulk .Apply_ul li span {
+    font-size: 0.26rem;
+    color: #666;
+}
+
+.Bulk .Apply_ul li .input {
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+}
+
+.Bulk .Apply_ul li .input button {
+    width: 1.26rem;
+    height: 0.5rem;
+    border: none;
+    outline: none;
+    border-left: 1px solid #ccc;
+    text-align: center;
+    background: #fff;
+    color: #999;
+}
+
+.Bulk .Apply_ul li input {
+    width: 2.8rem;
+    border: none;
+    outline: none;
+    padding-left: 0.34rem;
+}
+
+.Bulk .Apply_p2 {
+    font-size: 0.18rem;
+    color: #666;
+    padding-left: 0.76rem;
+    margin-top: 0.3rem;
+}
+
+.Bulk .Apply_p2 a {
+    color: #fc725e;
+}
+
+.Bulk .Apply_button {
+    display: block;
+    width: 6rem;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.3rem;
+    color: #fff;
+    background: #fc725e;
+    margin: 0.6rem auto;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+#app {
+    width: 100%;
+    height: auto;
+}
+
+#app .app_box {
+    width: 6.9rem;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 0.2rem;
+    position: relative;
+}
+
+#app .app_box .showMessage {
+    position: absolute;
+    right: -0.25rem;
+    top: 3rem;
+    width: 0.2rem;
+    height: auto;
+    font-size: 0.2rem;
+    color: #999;
+    z-index: 200;
+    line-height: 0.3rem;
+}
+
+#app .app_box .check {
+    width: 100%;
+    height: 0.8rem;
+    margin-bottom: 0.2rem;
+    padding: 0 0.4rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    background-color: #f5f5f5;
+    position: relative;
+}
+#app .app_box .check .see_cer{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    color: #ccc;
+}
+#app .app_box .check .jump {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 0.45rem;
+    font-size: 0.28rem;
+    color: #ccc;
+    line-height: 0.8rem;
+}
+
+#app .app_box .check .icon-sousuo {
+    font-size: 0.3rem;
+    color: #ccc;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.4rem;
+    line-height: 0.8rem;
+}
+
+#app .app_box .check .saoyisao {
+    width: 1.25rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+    line-height: 0.8rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -moz-box-pack: center;
+    -webkit--moz-box-pack: center;
+    box-pack: center;
+    align-items: center;
+    -webkit-align-items: center;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+}
+
+#app .app_box .check .saoyisao .icon-saoyisao01 {
+    font-size: 0.6rem;
+    color: #000;
+}
+
+#app .app_box .check .saoyisao:After {
+    content: '';
+    width: 1px;
+    height: 0.4rem;
+    background: #ddd;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+}
+
+#app .app_box .call_template {
+    width: 100%;
+    height: 6.25rem;
+    background: #fff;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0.5rem 0.01rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+#app .app_box .call_template .call_content {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 0.2rem;
+}
+
+#app .app_box .call_template .call_content .img_template {
+    width: 100%;
+    height: 3.17rem;
+    border-radius: 0.2rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    position: relative;
+}
+
+#app .app_box .call_template .call_content .img_template .white {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    width: 2.2rem;
+    bottom: -1px;
+    z-index: 10;
+}
+
+#app .app_box .call_template .call_content .img_template .Head_portrait {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    border: 1px solid #fc6d59;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    bottom: -0.7rem;
+    z-index: 12;
+}
+
+#app .app_box .call_template .call_content .img_template .Mask {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.2rem 0.2rem 0 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    padding-top: 1rem;
+}
+#app .app_box .call_template .call_content .img_template .Mask .show{
+    display: block;
+    width: 0.8rem;
+    position: absolute;
+    top:0.3rem;
+    right:0.3rem;
+}
+#app .app_box .call_template .call_content .img_template .Mask .per_name {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+}
+
+#app .app_box .call_template .call_content .img_template .Mask .per_name .enter_logo {
+    width: 0.55rem;
+    margin-left: 0.37rem;
+}
+
+#app .app_box .call_template .call_content .img_template .Mask .per_name .enter_logo img {
+    display: block;
+    width: 0.55rem;
+}
+
+#app .app_box .call_template .call_content .img_template .Mask .per_name .name {
+    display: inline-block;
+    font-size: 0.34rem;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 0.24rem;
+    width: 5rem;
+}
+
+#app .app_box .call_template .call_content .img_template .Mask .per_name .alias {
+    width: 4.9rem;
+    margin-left: 0.24rem;
+    color: #fff;
+}
+
+#app .app_box .call_template .call_content .img_template .Mask .per_name .alias strong {
+    font-size: 0.48rem;
+    display: block;
+}
+
+#app .app_box .call_template .call_content .img_template .Mask .per_name .alias p {
+    margin-top: 0.1rem;
+    font-size: 0.24rem;
+}
+
+#app .app_box .call_template .call_content .zx_template_content {
+    width: 100%;
+    height: calc(100% - 3.17rem);
+    padding-top: 0.95rem;
+    position: relative;
+}
+
+#app .app_box .call_template .call_content .zx_template_content .name {
+    font-size: 0.48rem;
+    color: #000;
+    text-align: center;
+}
+
+#app .app_box .call_template .call_content .zx_template_content .name span {
+    margin-left: 0.2rem;
+}
+
+#app .app_box .call_template .call_content .zx_template_content .position {
+    text-align: center;
+    font-size: 0.28rem;
+    margin-top: 0.25rem;
+    line-height: 0.3rem;
+}
+
+#app .app_box .call_template .call_content .zx_template_content .position span {
+    margin: 0 0.2rem;
+}
+
+#app .app_box .call_template .call_content .zx_template_content .zx_Authentication {
+    width: 100%;
+    height: auto;
+    padding-top: 0.4rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -moz-box-pack: center;
+    -webkit--moz-box-pack: center;
+    box-pack: center;
+    align-items: center;
+    -webkit-align-items: center;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+}
+
+#app .app_box .call_template .call_content .zx_template_content .zx_Authentication .v {
+    width: 1.5rem;
+    height: 0.4rem;
+    border-radius: 0.3rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -moz-box-pack: center;
+    -webkit--moz-box-pack: center;
+    box-pack: center;
+    align-items: center;
+    -webkit-align-items: center;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    font-size: 0.2rem;
+    color: #000;
+    border: 1px solid #fc6e5a;
+}
+
+#app .app_box .call_template .call_content .zx_template_content .zx_Authentication .v.v_lang {
+    border: 1px solid #79d4fc;
+}
+
+#app .app_box .call_template .call_content .zx_template_content .zx_Authentication .v.v_lang a {
+    color: #79d4fc;
+}
+
+#app .app_box .call_template .call_content .zx_template_content .zx_Authentication .v:nth-child(1) {
+    margin-right: 0.2rem;
+}
+
+#app .app_box .call_template .call_content .zx_template_content .zx_Authentication .v a {
+    display: flex;
+    align-items: center;
+    color: #fc6e5a;
+}
+
+#app .app_box .call_template .call_content .zx_template_content .zx_Authentication .v img {
+    display: block;
+    width: 0.22rem;
+    margin-right: 0.05rem;
+}
+
+#app .app_box .call_template .call_content .zx_template_content .zx_edit {
+    display: block;
+    width: 1rem;
+    height: 0.4rem;
+    border-radius: 0.05rem;
+    text-align: center;
+    line-height: 0.35rem;
+    font-size: 0.24rem;
+    color: #3366cc;
+    border: 1px solid #3366cc;
+    position: absolute;
+    bottom: 0;
+    right: 0.3rem;
+}
+
+#app .app_box .zx_body {
+    width: 100%;
+    height: auto;
+    padding-top: 0.2rem;
+}
+
+#app .app_box .zx_body .body_ul {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1.4rem;
+}
+
+#app .app_box .zx_body .body_ul .li_box {
+    width: 100%;
+    height: 1rem;
+    border-bottom: 1px solid #ededed;
+    padding-left: 0.4rem;
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+}
+
+#app .app_box .zx_body .body_ul .li_box i.iconfont {
+    display: block;
+    font-size: 0.45rem;
+    color: #fc725e;
+}
+
+#app .app_box .zx_body .body_ul .li_box span {
+    font-size: 0.32rem;
+    color: #000;
+    margin-left: 0.32rem;
+}
+
+#app .app_box .zx_body .body_ul .li_box span.address {
+    width: 5.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#app .app_box .zx_body .body_ul .li_box.li_last {
+    min-height: 1rem !important;
+}
+
+#app .app_box .zx_body .body_ul .li_box .p_text {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    font-size: 0.32rem;
+    color: #000;
+    padding-left: 0.32rem;
+}
+
+#app .app_box .zx_body .body_ul .li_box .p_text span {
+    display: inline-block;
+    width: 3.7rem;
+    font-size: 0.25rem;
+    line-height: 0.3rem;
+    margin-left: 0.1rem;
+}
+
+#app .app_box .zx_body .body_ul .li_box a.iconfont {
+    font-size: 0.38rem;
+    color: #ddd;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+    line-height: 1rem;
+}
+
+#app .personal_home {
+    width: 100%;
+    height: auto;
+    background: #f5f5f5;
+}
+
+#app .personal_home .head {
+    width: 100%;
+    height: 3.24rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+#app .personal_home .head .head_box {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    padding-top: 0.4rem;
+}
+
+#app .personal_home .head .head_box .Head_portrait {
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    border: 1px solid #fff;
+}
+
+#app .personal_home .head .head_box p {
+    padding-top: 0.3rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -moz-box-pack: center;
+    -webkit--moz-box-pack: center;
+    box-pack: center;
+    align-items: center;
+    -webkit-align-items: center;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    font-size: 0.36rem;
+    color: #fff;
+}
+
+#app .personal_home .head .head_box p span {
+    margin: 0 0.15rem;
+}
+
+#app .personal_home .head .head_box .com_text {
+    font-size: 0.24rem;
+    color: #fff;
+    text-align: center;
+}
+
+#app .personal_home .body {
+    width: 100%;
+    height: auto;
+    margin-top: 0.2rem;
+    background: #fff;
+}
+
+#app .personal_home .body ul {
+    width: 100%;
+    height: auto;
+}
+
+#app .personal_home .body ul li {
+    width: 100%;
+    height: 1.2rem;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+#app .personal_home .body ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    position: relative;
+    padding: 0 0.3rem;
+}
+
+#app .personal_home .body ul li .iconfont {
+    display: block;
+    font-size: 0.32rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0.3rem;
+    line-height: 1.2rem;
+    color: #333;
+}
+
+#app .personal_home .body ul li .li_box {
+    width: auto;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    position: relative;
+}
+
+#app .personal_home .body ul li .li_box .message {
+    width: 0.14rem;
+    height: 0.14rem;
+    background: #fc725e;
+    border-radius: 50%;
+    position: absolute;
+    right: -0.16rem;
+    top: 0.34rem;
+}
+
+#app .personal_home .body ul li .li_box img {
+    display: block;
+    width: 0.7rem;
+}
+
+#app .personal_home .body ul li .li_box span {
+    margin-left: 0.3rem;
+    color: #333;
+    font-size: 0.28rem;
+}
+
+#app .personal_home .body ul li .jump {
+    width: 1rem;
+    height: 100%;
+    line-height: 1.2rem;
+    font-size: 0.28rem;
+    color: #333;
+    margin-right: 0.17rem;
+}
+
+#app .personal_home .body ul li .jump.active {
+    color: #fc725e;
+}
+
+#app .personal_home .body ul li:last-child {
+    border-bottom: 0;
+}
+
+#zx_see {
+    width: 100%;
+    height: 1.1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0 0.3rem;
+    background: #fff;
+    border-top: 1px solid #ededed;
+}
+
+#zx_see .btn_see {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+}
+
+#zx_see .btn_Deposit {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+}
+
+#zx_see p {
+    width: auto;
+    font-size: 0.32rem;
+    color: #333;
+    padding-left: 0.3rem;
+}
+
+#zx_see .btn {
+    width: 2.5rem;
+    height: 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 0.3rem;
+    color: #fff;
+}
+
+#zx_delete {
+    width: 100%;
+    height: 1.1rem;
+    border-top: 1px solid #ededed;
+    padding: 0.15rem 0.3rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+}
+
+#zx_delete button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid #fc725e;
+    font-size: 0.3rem;
+    color: #fc725e;
+}
+
+#Authentication {
+    width: 100%;
+    height: 100%;
+}
+
+#Authentication .Authen_ul {
+    width: 100%;
+    height: auto;
+    background: #ecebeb;
+    padding: 0.3rem;
+}
+
+#Authentication .Authen_ul.real_name {
+    padding-bottom: 0;
+}
+
+#Authentication .Authen_ul.real_name li {
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+#Authentication .Authen_ul li:nth-of-type(1) ~ li {
+    margin-top: 0.3rem;
+}
+
+#Authentication .Authen_ul li {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0.25rem;
+    background: #ccc;
+    box-shadow: 0 0 0.1rem 0.01rem rgba(0, 0, 0, 0.1);
+    padding: 0.4rem;
+    position: relative;
+}
+
+#Authentication .Authen_ul li.active {
+    background: #fc725e;
+    background: -webkit-gradient(linear, left top, right bottom, from(#ff6666), to(#ff9966));
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff6666), to(#ff9966));
+    background: -webkit-linear-gradient(left, #ff6666, #ff9966);
+    background: -moz-linear-gradient(left, #ff6666, #ff9966);
+    background: -o-linear-gradient(left, #ff6666, #ff9966);
+    background: -ms-linear-gradient(left, #ff6666, #ff9966);
+}
+
+#Authentication .Authen_ul li.real {
+    background: #5e8ffc;
+    background: -webkit-gradient(linear, left top, right bottom, from(#5e8ffc), to(#5ec1fc));
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#5e8ffc), to(#5ec1fc));
+    background: -webkit-linear-gradient(left, #5e8ffc, #5ec1fc);
+    background: -moz-linear-gradient(left, #5e8ffc, #5ec1fc);
+    background: -o-linear-gradient(left, #5e8ffc, #5ec1fc);
+    background: -ms-linear-gradient(left, #5e8ffc, #5ec1fc);
+}
+
+#Authentication .Authen_ul li .li_box {
+    display: flex;
+    align-items: center;
+}
+
+#Authentication .Authen_ul li .li_box img {
+    display: block;
+    width: 0.8rem;
+    margin-right: 0.2rem;
+}
+
+#Authentication .Authen_ul li .li_box strong {
+    font-size: 0.35rem;
+    color: #fff;
+}
+
+#Authentication .Authen_ul li p {
+    font-size: 0.26rem;
+    color: #fff;
+    margin-top: 0.26rem;
+}
+
+#Authentication .Authen_ul li .duigou {
+    position: absolute;
+    top: 0.14rem;
+    right: 0.2rem;
+    width: 0.3rem;
+    display: none;
+}
+
+#Authentication .Authen_ul li .duigou.active {
+    display: block;
+}
+
+#Authentication .Authen_body {
+    width: 100%;
+    background: #fff;
+    height: auto;
+}
+
+#Authentication .Authen_body .body_head {
+    width: 100%;
+    height: 0.6rem;
+    text-align: center;
+    line-height: 0.6rem;
+    font-size: 0.22rem;
+    color: #333;
+    border-bottom: 1px solid #ececec;
+}
+
+#Authentication .Authen_body .body_content {
+    width: 100%;
+    padding: 0.5rem 0.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #ededed;
+}
+
+#Authentication .Authen_body .body_content:nth-of-type(3) {
+    border-bottom: 0;
+}
+
+#Authentication .Authen_body .body_content img {
+    display: block;
+    width: 1rem;
+}
+
+#Authentication .Authen_body .body_content .right > h4 {
+    font-size: 0.3rem;
+    color: #999;
+    margin-top: -0.3rem;
+    font-weight: bold;
+}
+
+#Authentication .Authen_body .body_content .right > p {
+    font-size: 0.26rem;
+    color: #999;
+    margin-top: 0.15rem;
+}
+
+#Authentication .Authen_body .body_foot {
+    width: 6.9rem;
+    height: 0.5rem;
+    background: #ededed;
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.18rem;
+    color: #666;
+    margin: 0 auto;
+}
+
+#Authentication .Authen_foot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.2rem;
+    border-top: 1px solid #e4e4e4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+#Authentication .Authen_foot .Authen_complete {
+    width: 6.3rem;
+    height: 0.8rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    line-height: 0.8rem;
+    font-size: 0.3rem;
+    color: #fff;
+    background: #fc725e;
+    background: -webkit-gradient(linear, left top, right bottom, from(#ff6666), to(#ff9966));
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff6666), to(#ff9966));
+    background: -webkit-linear-gradient(left, #ff6666, #ff9966);
+    background: -moz-linear-gradient(left, #ff6666, #ff9966);
+    background: -o-linear-gradient(left, #ff6666, #ff9966);
+    background: -ms-linear-gradient(left, #ff6666, #ff9966);
+    border: 0;
+    outline: none;
+}
+
+#query_enter{
+    width: 100%;
+    height:100%;
+    padding-top:0.2rem;
+}
+
+#query_enter .search_enter{
+    width: 6.9rem;
+    height:0.8rem;
+    position: relative;
+    margin:0 auto;
+}
+
+#query_enter .search_enter #search{
+    display: block;
+    padding-left:0.5rem;
+    width: 100%;
+    height:100%;
+    border-radius: 0.5rem;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+}
+#query_enter .search_enter .icon-sousuo{
+    display: block;
+    width: 1.2rem;
+    height:0.8rem;
+    font-size: 0.4rem;
+    color: #fc725e;
+    position: absolute;
+    top:0;
+    right:0;
+    text-align: center;
+    line-height: 0.8rem;
+}
+
+#query_enter .information_list{
+    width: 100%;
+    height:auto;
+    padding:0.55rem 0.3rem;
+}
+#query_enter .information_list .data_list{
+    width: 100%;
+    height:auto;
+    margin-bottom:0.35rem;
+}
+
+#query_enter .information_list .data_list .title{
+    width: 100%;
+    height:Auto;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+}
+
+#query_enter .information_list .data_list .title .iconfont{
+    font-size: 0.35rem;
+    margin-right:0.2rem;
+}
+#query_enter .information_list .data_list .title  span{
+    font-size: 0.28rem;
+    color: #ccc;
+}
+
+#query_enter .information_list .data_list .content{
+    width: 100%;
+}
+
+#query_enter .information_list .data_list.Record{
+    display: none;
+}
+#query_enter .information_list .data_list.Record.active{
+    display: block;
+}
+#query_enter .information_list .data_list .content a{
+    font-size: 0.28rem;
+    color: #333;
+    display: block;
+    margin-top:0.35rem;
+    margin-left:0.5rem;
+}
+
+
+#query_enter .friends_list{
+    width: 100%;
+    height:auto;
+}
+#query_enter .friends_list .list_head{
+    width: 6.9rem;
+    height:auto;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 auto;
+}
+#query_enter .friends_list .list_head li{
+    width: 33.33%;
+    height:auto;
+    font-size: 0.28rem;
+    text-align: center;
+    position: relative;
+    margin:0.4rem 0;
+}
+#query_enter .friends_list .list_head li.active{
+    color: #fc725e;
+}
+#query_enter .friends_list .list_head li:nth-child(2)::after{
+    content: '';
+   width: 1px;
+    height:0.26rem;
+    background: #999;
+    position: absolute;
+    left:0;
+    top:0;
+}
+#query_enter .friends_list .list_head li:nth-child(2)::before{
+    content: '';
+    width: 1px;
+    height:0.26rem;
+    background: #999;
+    position: absolute;
+    right:0;
+    top:0;
+}
+#btn_clear{
+    font-size: 0.28rem;
+    color: #ccc;
+    position: absolute;
+    right:0.3rem;
+    top:-0.05rem;
+}

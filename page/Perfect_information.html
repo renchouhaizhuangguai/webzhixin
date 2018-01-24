@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>绑定手机</title>
+    <link rel="stylesheet" href="../assets/wechat/css/animate.css">
+    <link rel="stylesheet" href="../assets/wechat/css/rem.css">
+    <link rel="stylesheet" href="../assets/wechat/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../assets/wechat/css/public_style.css">
+</head>
+<body>
+<div class="Bulk Perfect">
+    <div class="Perfect_box">
+        <h4 class="Perfect_name">完善基础信息</h4>
+        <ul class="Apply_ul Perfect_ul">
+            <li><i class="iconfont icon-shiming"></i><span>姓名</span><input type="text" placeholder="输入姓名" ></li>
+            <li class="component_select">
+                <i class="iconfont icon-qiye1"></i><span>公司</span><input class="select" style="width: 4rem" type="text" placeholder="输入所在公司名称" >
+                <ol>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ol>
+            </li>
+            <li><i class="iconfont icon-pipeizhiwei"></i><span>职位</span><input type="text" placeholder="请输入职位" ></li>
+        </ul>
+        <a href="business_card.html" class="Apply_button">生成名片</a>
+    </div>
+</div>
+</body>
+</html>
+<script src="../assets/wechat/js/jquery-1.9.1.min.js"></script>
+<!--公共部分-->
+<script src="../assets/wechat/js/public.js"></script>
+<!--showmessage-->
+<script src="../assets/wechat/js/toast.js"></script>
+<script>
+    $(function () {
+        select();
+    })
+</script>

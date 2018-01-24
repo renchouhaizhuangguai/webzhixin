@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>绑定手机</title>
+    <link rel="stylesheet" href="../assets/wechat/css/animate.css">
+    <link rel="stylesheet" href="../assets/wechat/css/rem.css">
+    <link rel="stylesheet" href="../assets/wechat/css/public_style.css">
+</head>
+<body>
+<div id="Authentication">
+    <ul class="Authen_ul">
+        <!--认证完成给以下li加上active类-->
+        <li class="active">
+            <div class="li_box">
+                <img src="../assets/wechat/img/v_hui.png" alt="">
+                <strong>上海履途网络科技有限公司</strong>
+            </div>
+            <p>点亮实名认证标识，可提示您的身份可信度，更能享受多重特权。</p>
+            <img class="duigou" src="../assets/wechat/img/news_duiduidui.png" alt="">
+        </li>
+        <li>
+            <div class="li_box">
+                <img src="../assets/wechat/img/v_hui.png" alt="">
+                <strong>上海履途网络科技有限公司</strong>
+            </div>
+            <p>点亮实名认证标识，可提示您的身份可信度，更能享受多重特权。</p>
+            <img class="duigou" src="../assets/wechat/img/news_duiduidui.png" alt="">
+        </li>
+    </ul>
+    <div class="Authen_body">
+        <div class="body_head">
+            认证完成你将获得
+        </div>
+        <div class="body_content">
+            <img id="compalte_ok" src="../assets/wechat/img/v_hui1.png" alt="">
+            <div class="right">
+                <h4>专属徽章</h4>
+                <p>可信身份象征，更多合作机会</p>
+            </div>
+        </div>
+        <div class="body_content">
+            <img id="personal_ok" src="../assets/wechat/img/personal_hui.png" alt="">
+            <div class="right">
+                <h4>查询个人</h4>
+                <p>查询个人信息、工商、不良记录、风险信息等</p>
+            </div>
+        </div>
+        <div class="body_foot">
+            更多特权敬请期待
+        </div>
+    </div>
+    <div class="Authen_foot">
+        <a href="Application.html" class="Authen_complete">立即认证</a>
+    </div>
+</div>
+
+</body>
+</html>
+<script src="../assets/wechat/js/jquery-1.9.1.min.js"></script>
+<!--showmessage-->
+<script src="../assets/wechat/js/toast.js"></script>
+
+<script>
+    $(function () {
+        var Authen_complete=$('.Authen_foot');
+        var complate=$('.Authen_ul li');
+        var compalte_ok=$('#compalte_ok');
+        var personal_ok=$('#personal_ok');
+        //判断 认证成功的状态
+        complate.each(function (i,v) {
+            if($(v).hasClass('active')){
+                $(v).find('.li_box img').attr('src','../assets/wechat/img/v_complate.png');
+                $(v).find('.duigou').addClass('active');
+                complete();
+            }
+        });
+
+        var news=complate.filter(function (i,v) {
+            return $(v).attr('class')=='active';
+        });
+
+        if(complate.length<1){
+            Authen_complete.css('display','none');
+        }
+
+        if(news.length==complate.length){
+            Authen_complete.css('display','none');
+        }
+
+        function complete() {
+            compalte_ok.attr('src','../assets/wechat/img/v_complate1.png');
+            compalte_ok.next().find('h4').css('color','#333')
+            compalte_ok.next().find('p').css('color','#666');
+            personal_ok.attr('src','../assets/wechat/img/parsonal_liang.png');
+            personal_ok.next().find('h4').css('color','#333')
+            personal_ok.next().find('p').css('color','#666')
+        }
+
+    })
+</script>

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>绑定手机</title>
+    <link rel="stylesheet" href="../assets/wechat/css/animate.css">
+    <link rel="stylesheet" href="../assets/wechat/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../assets/wechat/css/rem.css">
+    <link rel="stylesheet" href="../assets/wechat/css/public_style.css">
+</head>
+<body>
+    <div id="query_enter">
+        <div class="search_enter component_select">
+            <input id="search" type="text" placeholder="请输入要查询的公司名称">
+            <i class="iconfont icon-sousuo"></i>
+            <ol>
+                <li>456454654</li>
+                <li>456454654</li>
+                <li>456454654</li>
+                <li>456454654</li>
+                <li>456454654</li>
+            </ol>
+        </div>
+
+        <div class="information_list">
+           <div class="data_list">
+               <div class="title">
+                   <i style="color: #fccb5e" class="iconfont icon-web-icon-"></i><span>我的公司</span>
+               </div>
+               <div class="content">
+                   <a href="">上海履途网络科技有限公司</a>
+                   <a href="">阿里巴巴网络信息技术有限公司</a>
+               </div>
+           </div>
+
+            <div class="data_list Record">
+                <div class="title">
+                    <i style="color: #5e9efc" class="iconfont icon-sousuo"></i><span>搜索记录</span>
+                    <button id="btn_clear">清空记录</button>
+                </div>
+                <div class="content ">
+                    <a href="">上海火星科技有限公司</a>
+                    <a href="">京东</a>
+                </div>
+            </div>
+
+            <div class="data_list">
+                <div class="title">
+                    <i style="color: #fc755e" class="iconfont icon-remen"></i><span>热门搜索</span>
+                </div>
+                <div class="content">
+                    <a href="">泰兴红枫紫薇高效农业发展有限公司</a>
+                    <a href="">上海立燊国际贸易有限公司</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部tab-->
+    <footer id="foot">
+        <ul class="foot_nav">
+            <li>
+                <a href="business_card.html" class="active">
+                    <i class="iconfont icon-yuanjiaojuxingkaobei"></i><i class="iconfont icon-yuanjiaojuxingkaobei2"></i>
+                    <span>名片</span>
+                </a>
+            </li>
+            <li>
+                <a href="call_Clip.html">
+                    <i class="iconfont icon-yuanjiaojuxing1"></i><i class="iconfont icon-yuanjiaojuxingkaobei1"></i>
+                    <span>名片夹</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="center"><img class="icon_phone" src="../assets/wechat/img/phone.png" alt=""></i>
+                    <span class="center_text">存名片</span>
+                </a>
+            </li>
+            <li>
+                <a href="personal_see.html">
+                    <i class="iconfont icon-yuanjiaojuxing"></i><i class="iconfont icon-icon-test1"></i>
+                    <span>查个人</span>
+                </a>
+            </li>
+            <li>
+                <a href="personal_home.html">
+                    <i class="iconfont icon-tuoyuankaobei"></i><i class="iconfont icon-tuoyuankaobei1"></i>
+                    <span>我的</span>
+                </a>
+            </li>
+        </ul>
+        <div class="garden"></div>
+    </footer>
+</body>
+</html>
+<script src="../assets/wechat/js/jquery-1.9.1.min.js"></script>
+<!--showmessage-->
+<script src="../assets/wechat/js/toast.js"></script>
+<!--公共-->
+<script src="../assets/wechat/js/public.js"></script>
+
+<script>
+    $(function () {
+        //获得焦点
+        var search=$('#search');
+        search.trigger("click").focus();
+        //企业搜索下拉
+        select();
+
+
+        //清空记录
+        var btn_clear=$('#btn_clear');
+        btn_clear.on('click',function () {
+            $(this).parents('.data_list').find('.content').remove();
+            render();
+        })
+        render();
+        function render() {
+            var Record=$('.Record');
+            if(Record.find('a').text()!=''){
+                Record.addClass('active');
+            }else{
+                Record.removeClass('active');
+            }
+        }
+    })
+</script>
+

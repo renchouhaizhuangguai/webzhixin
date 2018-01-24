@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>名片申请介绍</title>
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../assets/wechat/iconfont/iconfont.css"/>
+    <link rel="stylesheet" href="../assets/wechat/css/rem.css"/>
+    <link rel="stylesheet" href="../assets/wechat/css/report.css">
+</head>
+<body>
+<section>
+    <div class="head" style="background-image:url('../assets/wechat/img/333333.jpg')">
+        <div class="head_box" style="background-image:url('../assets/wechat/img/333333.jpg')">
+            <div class="v"><img src="../assets/wechat/img/v1.png" alt=""></div>
+        </div>
+        <div class="name">
+            <h4>张小三</h4>
+            <p><span>男<i></i></span><span>32岁<i></i></span><span>12.17<i></i></span><span>射手座</span></p>
+        </div>
+        <div class="report">
+            <span>附加版</span>
+        </div>
+    </div>
+
+    <!--实名认证-->
+    <div class="public">
+        <div class="public_top">
+            <i style="color: #fc725e" class="iconfont icon-tuoyuankaobei1"></i>
+            <span>实名认证</span>
+            <i class="iconfont icon-icon1 active"></i>
+        </div>
+        <div class="School_content active">
+        <ul>
+            <li><span class="left">姓名</span>：<span class="content">张某坤</span></li>
+            <li><span class="left">联系方式</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">身份证号</span>：<span class="content">134589323423121315</span></li>
+        </ul>
+            <!--认证未通过-->
+            <img class="Verification" src="../assets/wechat/img/Verificationadopt.png" alt="">
+            <!--认证通过-->
+            <!--<img class="Verification" src="../assets/wechat/img/Verificationpass.png" alt="">-->
+        </div>
+    </div>
+    <!--学历-->
+    <div class="public">
+        <div class="public_top">
+            <i style="color: #49a9ec;font-size: 0.3rem" class="iconfont icon-jiaoyu"></i>
+            <span>学历</span>
+            <i class="iconfont icon-icon1 active"></i>
+        </div>
+        <div class="School_content active">
+            <!--查到有-->
+            <ul class="School">
+                <li><span class="left">学校</span>：<span class="content">上海复旦</span></li>
+                <li><span class="left">学历等级</span>：<span class="content">本科</span></li>
+                <li><span class="left">毕业时间</span>：<span class="content">2008-07-01</span></li>
+                <li><span class="left">毕业结论</span>：<span class="content">毕业</span></li>
+                <li><span class="left">学历类型</span>：<span class="content">统招</span></li>
+                <li><span>学校所在城市</span>：<span class="content">上海</span></li>
+                <li><span>学校所属主管单位</span>：<span class="content">上海教育部</span></li>
+                <li><span>学校类型（综合、理工等）</span>：<span class="content">综合</span></li>
+                <li><span>办学形式（全日制、函授等）</span>：<span class="content">全日制</span></li>
+                <li><span>学校性质（公办、民办等）</span>：<span class="content">公办</span></li>
+                <li><span>是否为211</span>：<span class="content">是</span></li>
+                <li><span>是否为985</span>：<span class="content">是</span></li>
+                <div class="top"></div>
+            </ul>
+            <!--查到无-->
+            <ul class="School hide">
+                <li><p class="null">截止报告更新日期，该个人暂未有2001年后国内高等 学历记录</p></li>
+            </ul>
+        </div>
+    </div>
+    <!--个人工商-->
+    <div class="public">
+        <div class="public_top">
+            <i style="color: #c452ff" class="iconfont icon-gongshangziliao"></i>
+            <span>个人工商查询</span>
+            <i class="iconfont icon-icon1"></i>
+        </div>
+        <div class="School_content">
+        <ul class="School">
+            <li><h4>担任企业法人</h4></li>
+            <li><span class="left">姓名</span>：<span class="content">张某坤</span></li>
+            <li><span>企业(机构)名称</span>：<span class="content">上海履途网络科技有限公司</span></li>
+            <li><span class="left">注册号</span>：<span class="content">123123124124123124</span></li>
+            <li><span>企业(机构)类型</span>：<span class="content">有限责任公司（自然人投资或控股）</span></li>
+            <li><span>注册资本(万元)</span>：<span class="content">333333</span></li>
+            <li><span>注册资本币种</span>：<span class="content">人民币元</span></li>
+            <li><span class="left">企业状态</span>：<span class="content">在营</span></li>
+            <div class="top"></div>
+        </ul>
+            <!--未查询到担任企业法人 去掉hide呈现-->
+        <ul class="School hide">
+            <li><h4>担任企业法人</h4></li>
+            <li><p class="null">截止报告更新日期，该个人暂未有在外担任法人记录</p></li>
+        </ul>
+
+        <ul class="School">
+            <li><h4>担任企业高管</h4></li>
+            <li><span class="left ">姓名</span>：<span class="content">张某坤</span></li>
+            <li><span>企业(机构)名称</span>：<span class="content">上海履途网络科技有限公司</span></li>
+            <li><span class="left">注册号</span>：<span class="content">123123124124123124</span></li>
+            <li><span>企业(机构)类型</span>：<span class="content">有限责任公司（自然人投资或控股）</span></li>
+            <li><span>注册资本(万元)</span>：<span class="content">333333</span></li>
+            <li><span>注册资本币种</span>：<span class="content">人民币元</span></li>
+            <li><span class="left">企业状态</span>：<span class="content">在营</span></li>
+            <li><span class="left">职位</span>：<span class="content">总监</span></li>
+            <div class="top"></div>
+        </ul>
+            <!--未查询到担任企业高管 去掉hide呈现-->
+        <ul class="School hide">
+            <li><h4>担任企业高管</h4></li>
+            <li><p class="null">截止报告更新日期，该个人暂未有在外担任高管记录</p></li>
+        </ul>
+        <ul class="School ">
+            <li><h4>担任企业股东</h4></li>
+            <li><span class="left">姓名</span>：<span class="content">张某坤</span></li>
+            <li><span>企业(机构)名称</span>：<span class="content">上海履途网络科技有限公司</span></li>
+            <li><span class="left">注册号</span>：<span class="content">123123124124123124</span></li>
+            <li><span>企业(机构)类型</span>：<span class="content">有限责任公司（自然人投资或控股）</span></li>
+            <li><span>注册资本(万元)</span>：<span class="content">333333</span></li>
+            <li><span>注册资本币种</span>：<span class="content">人民币元</span></li>
+            <li><span class="left">企业状态</span>：<span class="content">在营</span></li>
+            <li><span class="left">出资比例</span>：<span class="content">15%</span></li>
+            <div class="top"></div>
+        </ul>
+            <!--未查询到担任企业股东 去掉hide呈现-->
+        <ul class="School hide">
+            <li><h4>担任企业股东</h4></li>
+            <li><p class="null">截止报告更新日期，该个人暂未有在外担任股东记录</p></li>
+        </ul>
+        </div>
+    </div>
+    <!--个人综合风险-->
+    <div class="public">
+        <div class="public_top">
+            <i style="color: #ffb43e" class="iconfont icon-02"></i>
+            <span>个人综合风险</span>
+            <i class="iconfont icon-icon1"></i>
+        </div>
+        <div class="School_content">
+
+            <ul class="School">
+                <li><h4>失信被执行人信息</h4></li>
+                <li><span class="left">案号</span>：<span class="content">2423423</span></li>
+                <li><span class="left">姓名</span>：<span class="content">张某坤</span></li>
+                <li><span>失信人类型</span>：<span class="content">银行贷款逾期</span></li>
+                <li><span class="left">性别</span>：<span class="content">男</span></li>
+                <li><span class="left">年龄</span>：<span class="content">32岁</span></li>
+                <li><span class="left">身份证号</span>：<span class="content">120198612170990</span></li>
+                <li><span>身份证原始发证地</span>：<span class="content">上海闵行</span></li>
+                <li><span>法定代表人/负责人姓名</span>：<span class="content">张某坤</span></li>
+                <li><span class="left">立案时间</span>：<span class="content">2016-10-01</span></li>
+                <li><span class="left">公布时间</span>：<span class="content">2016-11-15</span></li>
+                <li><span class="left">执行法院</span>：<span class="content">上海闵行区法院</span></li>
+                <li><span class="left">省份</span>：<span class="content">上海市</span></li>
+                <li><span>执行依据文号</span>：<span class="content">32414wer</span></li>
+                <li><span>执行依据单位</span>：<span class="content">上海闵行区法院</span></li>
+                <li><span>法院文书确定的义务</span>：<span class="content">履行银行贷款</span></li>
+                <li><span>失信被执行人行为具体情形</span>：<span class="content">逾期</span></li>
+                <li><span class="left">已  履  行</span>：<span class="content">200W</span></li>
+                <li><span class="left">未  履  行</span>：<span class="content">300W</span></li>
+                <div class="top"></div>
+            </ul>
+            <!--未查询到失信被执行人信息 去掉hide呈现-->
+            <ul class="School hide">
+                <li><h4>失信被执行人信息</h4></li>
+                <li><p class="null">截止报告更新日期，该个人暂未有失信被执行人记录</p></li>
+            </ul>
+            <ul class="School">
+                <li><h4>被执行人信息</h4></li>
+                <li><span class="left">案号</span>：<span class="content">2423423</span></li>
+                <li><span class="left">姓名</span>：<span class="content">张某坤</span></li>
+                <li><span class="left">身份证号</span>：<span class="content">120198612170990</span></li>
+                <li><span class="left">年龄</span>：<span class="content">32岁</span></li>
+                <li><span class="left">性别</span>：<span class="content">男</span></li>
+                <li><span class="left">省份</span>：<span class="content">上海市</span></li>
+                <li><span>身份证原始发证地</span>：<span class="content">上海闵行</span></li>
+                <li><span class="left">执行法院</span>：<span class="content">上海闵行区法院</span></li>
+                <li><span class="left">立案时间</span>：<span class="content">2016-10-01</span></li>
+                <li><span class="left">案件状态</span>：<span class="content">执行中</span></li>
+                <li><span>执行标的（元）</span>：<span class="content">3000000元</span></li>
+                <div class="top"></div>
+            </ul>
+            <!--未查询到被执行人信息 去掉hide呈现-->
+            <ul class="School hide">
+                <li><h4>被执行人信息</h4></li>
+                <li><p class="null">截止报告更新日期，该个人暂未有被执行人记录</p></li>
+            </ul>
+
+            <ul class="School">
+                <li><h4>行政处罚历史信息</h4></li>
+                <li><span class="left">案发时间</span>：<span class="content">2012-10-12</span></li>
+                <li><span class="left">案由</span>：<span class="content">张某坤</span></li>
+                <li><span class="left">案值</span>：<span class="content">321198612170909</span></li>
+                <li><span class="left">案件类型</span>：<span class="content">男</span></li>
+                <li><span class="left">执行类别</span>：<span class="content">32岁</span></li>
+                <li><span class="left">案件结果</span>：<span class="content">120198612170990</span></li>
+                <li><span>处罚决定文书</span>：<span class="content">上海闵行</span></li>
+                <li><span>处罚决定书签发日期</span>：<span class="content">张某坤</span></li>
+                <li><span>作出行政处罚决定机关名</span>：<span class="content">2016-10-01</span></li>
+                <li><span>主要违法时间</span>：<span class="content">2016-11-15</span></li>
+                <li><span class="left">处罚依据</span>：<span class="content">上海闵行区法院</span></li>
+                <li><span class="left">处罚种类</span>：<span class="content">上海市</span></li>
+                <li><span class="left">处罚结果</span>：<span class="content">32414wer</span></li>
+                <li><span>处罚金额（万元）</span>：<span class="content">上海闵行区法院</span></li>
+                <li><span>处罚执行情况</span>：<span class="content">履行银行贷款</span></li>
+                <div class="top"></div>
+            </ul>
+
+            <!--未查询到行政处罚历史信息 去掉hide呈现-->
+            <ul class="School hide">
+                <li><h4>行政处罚历史信息</h4></li>
+                <li><p class="null">截止报告更新日期，该个人暂未行政处罚历史信息</p></li>
+            </ul>
+
+        <ul class="School">
+            <li><h4>严重违法</h4></li>
+            <li><span>所属事件类型</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">命中事件</span>：<span class="content">13333333333</span></li>
+            <li><span>涉及金额（元）</span>：<span class="content">13333333333</span></li>
+            <li><span>持续时长（天）</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">发生日期</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">信息来源</span>：<span class="content">13333333333</span></li>
+            <div class="top"></div>
+        </ul>
+            <!--未查询到严重违法 去掉hide呈现-->
+            <ul class="School hide">
+                <li><h4>严重违法</h4></li>
+                <li><p class="null">截止报告更新日期，该个人暂未严重违法</p></li>
+            </ul>
+        <ul class="School">
+            <li><h4>法院诉讼</h4></li>
+            <li><span>所属事件类型</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">命中事件</span>：<span class="content">13333333333</span></li>
+            <li><span>涉及金额（元）</span>：<span class="content">13333333333</span></li>
+            <li><span>持续时长（天）</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">发生日期</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">信息来源</span>：<span class="content">13333333333</span></li>
+            <div class="top"></div>
+        </ul>
+            <!--未查询到法院诉讼去掉hide呈现-->
+            <ul class="School hide">
+                <li><h4>法院诉讼</h4></li>
+                <li><p class="null">截止报告更新日期，该个人暂未法院诉讼</p></li>
+            </ul>
+        <ul class="School">
+            <li><h4>潜在风险</h4></li>
+            <li><span>所属事件类型</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">命中事件</span>：<span class="content">13333333333</span></li>
+            <li><span>涉及金额（元）</span>：<span class="content">13333333333</span></li>
+            <li><span>持续时长（天）</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">发生日期</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">信息来源</span>：<span class="content">13333333333</span></li>
+            <div class="top"></div>
+        </ul>
+            <!--未查询到潜在风险 去掉hide呈现-->
+            <ul class="School hide">
+                <li><h4>潜在风险</h4></li>
+                <li><p class="null">截止报告更新日期，该个人暂未潜在风险</p></li>
+            </ul>
+        <ul class="School">
+            <li><h4>多头借贷</h4></li>
+            <li><span>所属事件类型</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">命中事件</span>：<span class="content">13333333333</span></li>
+            <li><span>涉及金额（元）</span>：<span class="content">13333333333</span></li>
+            <li><span>持续时长（天）</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">发生日期</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">信息来源</span>：<span class="content">13333333333</span></li>
+            <div class="top"></div>
+        </ul>
+
+            <!--未查询到多头借贷 去掉hide呈现-->
+            <ul class="School hide">
+                <li><h4>多头借贷</h4></li>
+                <li><p class="null">截止报告更新日期，该个人暂未多头借贷</p></li>
+            </ul>
+        </div>
+    </div>
+    <!--不良记录-->
+    <div class="public">
+        <div class="public_top">
+            <i style="color: #ff4e4e;font-size: 0.4rem" class="iconfont icon-weifa"></i>
+            <span>不良记录</span>
+            <i class="iconfont icon-icon1"></i>
+        </div>
+        <div class="School_content">
+        <ul class="School">
+            <li><h4>在逃</h4></li>
+            <li><span class="left">比中结果</span>：<span class="content">比中在逃</span></li>
+            <li><span class="left">事件时间</span>：<span class="content">2016-12-01</span></li>
+            <div class="top"></div>
+        </ul>
+            <!--未查询到在逃 去掉hide呈现-->
+            <ul class="School hide">
+                <li><h4>在逃</h4></li>
+                <li><p class="null">截止报告更新日期，该个人暂未在逃记录</p></li>
+            </ul>
+        <ul class="School">
+            <li><h4>前科</h4></li>
+            <li><span class="left">比中结果</span>：<span class="content">比中前科</span></li>
+            <li><span class="left">事件时间</span>：<span class="content">2016-12-01</span></li>
+            <div class="top"></div>
+        </ul>
+            <!--未查询到前科 去掉hide呈现-->
+            <ul class="School hide">
+                <li><h4>前科</h4></li>
+                <li><p class="null">截止报告更新日期，该个人暂未前科记录</p></li>
+            </ul>
+        <ul class="School">
+            <li><h4>吸毒</h4></li>
+            <li><span class="left">比中结果</span>：<span class="content">比中吸毒</span></li>
+            <li><span class="left">事件时间</span>：<span class="content">2016-12-01</span></li>
+            <div class="top"></div>
+        </ul>
+            <!--未查询到吸毒 去掉hide呈现-->
+            <ul class="School hide">
+                <li><h4>吸毒</h4></li>
+                <li><p class="null">截止报告更新日期，该个人暂未吸毒记录</p></li>
+            </ul>
+        <ul class="School">
+            <li><h4>涉毒</h4></li>
+            <li><span class="left">比中结果</span>：<span class="content">比中涉毒</span></li>
+            <li><span class="left">事件时间</span>：<span class="content">2016-12-01</span></li>
+            <div class="top"></div>
+        </ul>
+            <!--未查询到涉毒 去掉hide呈现-->
+            <ul class="School hide">
+                <li><h4>涉毒</h4></li>
+                <li><p class="null">截止报告更新日期，该个人暂未涉毒记录</p></li>
+            </ul>
+        </div>
+    </div>
+    <!--职业技能证书-->
+    <div class="public">
+        <div class="public_top">
+            <i style="color: #17c5d5;font-size: 0.4rem" class="iconfont icon-fillzhiyejineng01"></i>
+            <span>职业技能证书</span>
+            <i class="iconfont icon-icon1"></i>
+        </div>
+        <div class="School_content">
+        <ul class="School">
+            <li><h4>计算机程序设计员</h4></li>
+            <li><span class="left">证书编号</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">颁证日期</span>：<span class="content">2015.09.15</span></li>
+            <li><span>输出证书级别</span>：<span class="content">Ⅲ级</span></li>
+            <li><span>证书上报单位</span>：<span class="content">上海职业技能指导中心</span></li>
+            <div class="top"></div>
+        </ul>
+            <!--未查询到职业资格证书 去掉hide呈现-->
+            <ul class="School hide">
+                <li><p class="null">截止报告更新日期，该个人暂未获得执业资格证书</p></li>
+            </ul>
+        </div>
+    </div>
+    <!--会计证-->
+    <div class="public">
+        <div class="public_top">
+            <i style="color: #177ed5" class="iconfont icon-huijiyingfuguanli"></i>
+            <span>会计证</span>
+            <i class="iconfont icon-icon1"></i>
+        </div>
+        <div class="School_content">
+
+        <ul class="School">
+            <li><h4>注册会记证</h4></li>
+            <li><span class="left">证书编号</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">证书级别</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">取证年度</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">取证年度</span>：<span class="content">13333333333</span></li>
+            <li><span class="left">准考证号</span>：<span class="content">上海职业技能指导中心</span></li>
+            <div class="top"></div>
+        </ul>
+            <!--未查询到会计证 去掉hide呈现-->
+            <ul class="School hide">
+                <li><p class="null">截止报告更新日期，该个人暂未获得会计相关证件</p></li>
+            </ul>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+<script src="../assets/wechat/js/jquery-1.9.1.min.js"></script>
+<script>
+    $(function () {
+      var public_top=$('.public .public_top');
+      var School_content=$('.School_content');
+        public_top.bind('click',function () {
+            if($(this).next().hasClass('active')){
+                $(this).find('.icon-icon1').removeClass('active');
+                $(this).next().removeClass('active');
+            }else{
+                $(this).next().addClass('active');
+                $(this).find('.icon-icon1').addClass('active');
+            }
+        })
+    })
+</script>

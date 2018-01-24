@@ -1,0 +1,978 @@
+@charset "UTF-8";
+@media screen and (max-width: 2048px) {
+    html {
+        font-size: 273.06667px;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    html {
+        font-size: 256px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    html {
+        font-size: 192px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    html {
+        font-size: 213.33333px;
+    }
+}
+
+@media screen and (max-width: 1242px) {
+    html {
+        font-size: 165.6px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    html {
+        font-size: 152px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    html {
+        font-size: 170.66667px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 136.53333px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    html {
+        font-size: 144px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    html {
+        font-size: 128px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 106.66667px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    html {
+        font-size: 98.13333px;
+    }
+}
+
+@media screen and (max-width: 732px) {
+    html {
+        font-size: 97.6px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    html {
+        font-size: 96px;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    html {
+        font-size: 88.93333px;
+    }
+}
+
+@media screen and (max-width: 644px) {
+    html {
+        font-size: 85.8666667px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    html {
+        font-size: 85.33333px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    html {
+        font-size: 75.73333px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    html {
+        font-size: 72px;
+    }
+}
+
+@media screen and (max-width: 533px) {
+    html {
+        font-size: 71.06667px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 64px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    html {
+        font-size: 58px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 53.33333px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    html {
+        font-size: 51.33333px;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 342px) {
+    html {
+        font-size: 45.6px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    html {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    html {
+        font-size: 32px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+a ,div ,li ,ul{
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+input {
+    -webkit-user-modify: read-write-plaintext-only;
+    border: none;
+    outline: medium;
+    -webkit-appearance: none;
+}
+
+input, textarea, button {
+    outline: none;
+    border: 0;
+    resize: none;
+    background: none;
+}
+
+._gradient {
+    background: #fc725e;
+    background: -webkit-gradient(linear, left top, right bottom, from(#ff6666), to(#ff9966));
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff6666), to(#ff9966));
+    background: -webkit-linear-gradient(left, #ff6666, #ff9966);
+    background: -moz-linear-gradient(left, #ff6666, #ff9966);
+    background: -o-linear-gradient(left, #ff6666, #ff9966);
+    background: -ms-linear-gradient(left, #ff6666, #ff9966);
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ddd;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ddd;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ddd;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #ddd;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+#Attention {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: -10;
+    opacity: 0;
+}
+#Attention.fail{
+    z-index: 200;
+    opacity: 1;
+}
+#Attention.fail .real_name_fail{
+    opacity: 1;
+    z-index: 10;
+}
+#Attention .real_name_fail{
+    width: 6.9rem;
+    height: 7rem;
+    background: #fff;
+    border-radius: 0.2rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -2;
+    opacity: 0;
+    transition: all 0.5s ease;
+    padding-top:0.5rem;
+}
+#Attention .real_name_fail .btn{
+    width: 5rem;
+    height: 0.8rem;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 0 auto;
+    font-size: 0.28rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.8rem;
+    margin-top: 0.5rem;
+}
+#Attention .real_name_fail h4{
+    font-size: 0.3rem;
+    color: #333;
+    text-align: center;
+}
+#Attention .real_name_fail h4 span{
+    color: #fc725e;
+}
+#Attention .real_name_fail .position_xx {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    bottom: -1rem;
+    text-align: center;
+    line-height: 0.3rem;
+}
+
+#Attention .real_name_fail .position_xx .iconfont {
+    font-size: 0.37rem;
+    color: #fff;
+}
+#Attention .real_name_fail p{
+    font-size: 0.2rem;
+    color: #999;
+    margin-top:0.2rem;
+    text-align: center;
+}
+#Attention .real_name_fail img{
+    display: block;
+    width: 4.7rem;
+    margin:0 auto;
+}
+#Attention.delete {
+    z-index: 200;
+    opacity: 1;
+}
+
+#Attention.delete .confirm_delete {
+    opacity: 1;
+    z-index: 10;
+}
+
+#Attention .confirm_delete {
+    width: 6rem;
+    height: 2.7rem;
+    background: #fff;
+    border-radius: 0.2rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -2;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+#Attention .confirm_delete p {
+    padding-top: 0.6rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #333;
+}
+
+#Attention .confirm_delete ul {
+    width: 100%;
+    height: auto;
+    padding: 0 0.7rem;
+    padding-top: 0.6rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+}
+
+#Attention .confirm_delete ul li {
+    width: 2rem;
+    height: 0.8rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    line-height: 0.8rem;
+    font-size: 0.28rem;
+    color: #fff;
+    background: #fff;
+}
+
+#Attention .confirm_delete ul li.delte {
+    background: #fc725e;
+    color: #fff;
+}
+
+#Attention .confirm_delete ul li.cancel {
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+#Attention.active {
+    z-index: 200;
+    opacity: 1;
+}
+
+#Attention.active .Attention {
+    opacity: 1;
+}
+
+#Attention > .Attention {
+    width: 6.8rem;
+    height: auto;
+    background: #fff;
+    border-radius: .4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+#Attention > .Attention._parsonal {
+    height: 8.5rem !important;
+    padding: 0.5rem;
+}
+
+#Attention > .Attention._parsonal ._parsonal_img {
+    display: block;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 0.25rem auto;
+}
+
+#Attention > .Attention ._parsonal_head {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+#Attention > .Attention ._parsonal_head .head {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 0.3rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: white;
+    margin-right: 0.3rem;
+}
+
+#Attention > .Attention ._parsonal_head .com {
+    width: 3.6rem;
+    height: auto;
+    padding-top: 0.15rem;
+    text-align: left;
+}
+
+#Attention > .Attention ._parsonal_head .com p {
+    font-size: 0.24rem;
+    color: #999;
+    margin-top: 0.2rem;
+}
+
+#Attention > .Attention ._parsonal_head .com p span {
+    margin-right: 0.3rem;
+}
+
+#Attention > .Attention ._parsonal_head .com p.name {
+    color: #333;
+}
+
+#Attention > .Attention ._parsonal_head .com h4 {
+    font-size: 0.3rem;
+    color: #333;
+}
+
+#Attention > .Attention > .p_follow {
+    font-size: 0.3rem;
+    color: #999;
+    text-align: center;
+    margin-top: 0.6rem;
+    display: none;
+}
+
+#Attention > .Attention > h3 {
+    font-size: 0.4rem;
+    margin-top: 0.9rem;
+    font-weight: bold;
+    color: #000;
+    position: relative;
+}
+
+#Attention > .Attention > h3::after {
+    position: absolute;
+    content: '';
+    width: 0.5rem;
+    height: 2px;
+    background: #ccc;
+    bottom: -0.4rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#Attention > .Attention > p {
+    font-size: 0.24rem;
+    margin-top: 0.8rem;
+    color: #333;
+    overflow: hidden;
+    line-height: 0.35rem;
+}
+
+#Attention > .Attention > p .iconfont {
+    display: inline-block;
+    margin: 0 0.1rem;
+    font-size: 0.3rem;
+    color: #ccc;
+}
+
+#Attention > .Attention > .ewm {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0.4rem auto;
+    border-radius: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 0 0.5rem 0.02rem rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+#Attention > .Attention > .ewm > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#Attention > .Attention > .foot_b {
+    width: 100%;
+    height: 1.7rem;
+    border-radius: 0 0 0.4rem 0.4rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #f6f6f6;
+    display: none;
+}
+
+#Attention > .Attention > .foot_b._parsonal_foot::after {
+    content: '';
+    width: 0;
+    border-right: 0.1rem solid rgba(0, 0, 0, 0.5);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0);
+    position: absolute;
+    right: 0;
+    top: -0.1rem;
+    z-index: 1000;
+}
+
+#Attention > .Attention > .foot_b._parsonal_foot::before {
+    content: '';
+    width: 0;
+    border-left: 0.1rem solid rgba(0, 0, 0, 0.5);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 0;
+    top: -0.1rem;
+    z-index: 1000;
+}
+
+#Attention > .Attention > .foot_b.active {
+    display: block;
+}
+
+#Attention > .Attention > .foot_b > span {
+    display: block;
+    margin-top: 0.35rem;
+    color: #333;
+    font-size: 0.28rem;
+    line-height: 0.45rem;
+}
+
+#Attention > .Attention > .foot_b > span > .c_ff {
+    color: #ff6666;
+}
+
+#Attention > .Attention > .fingerprint {
+    width: 100%;
+    height: 1.3rem;
+}
+
+#Attention > .Attention > .fingerprint .iconfont {
+    display: block;
+    font-size: 0.8rem;
+    color: #fc725e;
+}
+
+#Attention > .Attention > .fingerprint span {
+    display: block;
+    font-size: 0.24rem;
+    color: #333;
+    margin-top: 0.2rem;
+}
+
+#Attention > .Attention > .btn_xx {
+    font-size: 0.3rem;
+    color: #ccc;
+    position: absolute;
+    right: 0.3rem;
+    top: 0.3rem;
+    cursor: pointer;
+}
+
+.hide {
+    display: none !important;
+}
+
+#Attention.position {
+    z-index: 20;
+    opacity: 1;
+}
+
+#Attention.position .position_init {
+    opacity: 1;
+    z-index: 10;
+}
+
+#Attention .position_init {
+    width: 6.5rem;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 0.4rem;
+    background: #fff;
+    padding-top: 0.8rem;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+#Attention .position_init img {
+    display: block;
+    width: 1.9rem;
+    margin-left: 2.7rem;
+}
+
+#Attention .position_init h4 {
+    font-size: 0.4rem;
+    text-align: center;
+    color: #333;
+    margin-top: 0.2rem;
+}
+
+#Attention .position_init .btn {
+    width: 5rem;
+    height: 0.8rem;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 0 auto;
+    font-size: 0.28rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+#Attention .position_init .position_xx {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    bottom: -1rem;
+    text-align: center;
+    line-height: 0.3rem;
+}
+
+#Attention .position_init .position_xx .iconfont {
+    font-size: 0.37rem;
+    color: #fff;
+}
+
+#Attention .real_name_fail.identity{
+    width: 6.9rem;
+    height:8.85rem;
+    border-radius: 0.5rem;
+    padding:0;
+}
+#Attention .real_name_fail.identity.show{
+    height:10rem;
+}
+
+
+
+#Attention .real_name_fail.identity .identity_head{
+    width: 100%;
+    height:1.2rem;
+    border-bottom:1px dotted #ededed;
+    position: relative;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content:center;
+    justify-content:center;
+    -moz-box-pack:center;
+    -webkit--moz-box-pack:center;
+    box-pack:center;
+
+    align-items:center;
+    -webkit-align-items:center;
+    box-align:center;
+    -moz-box-align:center;
+    -webkit-box-align:center;
+    padding:0 2.2rem;
+}
+#Attention .real_name_fail.identity .identity_head::after{
+    content: '';
+    width: 0;
+    border-right: 0.1rem solid rgba(0, 0, 0, 0.5);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0);
+    position: absolute;
+    right: 0;
+    bottom: -0.1rem;
+    z-index: 1000;
+}
+
+#Attention .real_name_fail.identity .identity_head strong{
+    font-size: 0.36rem;
+    font-weight: bold;
+    margin:0 0.3rem;
+    color: #fc725e;
+}
+#Attention .real_name_fail.identity .identity_head img{
+    display: block;
+    width: 0.2rem;
+}
+
+#Attention .real_name_fail.identity .identity_head::before{
+    content: '';
+    width: 0;
+    border-left: 0.1rem solid rgba(0, 0, 0, 0.5);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: -0.1rem;
+    z-index: 1000;
+}
+
+
+#Attention .real_name_fail.identity .identity_content{
+    width: 100%;
+    height:auto;
+    padding-top:0.5rem;
+}
+#Attention .real_name_fail.identity .identity_content .show_con{
+    width: 100%;
+    height:8.06rem;
+    padding:0 0.4rem;
+    overflow-y: scroll;
+}
+
+#Attention .real_name_fail.identity .identity_content .show_h4{
+    font-size: 0.28rem;
+    color: #000;
+    text-align: left;
+    font-weight: bold;
+}
+#Attention .real_name_fail.identity .identity_content .show_h4:nth-child(1)~.show_h4{
+    margin-top:0.3rem;
+}
+#Attention .real_name_fail.identity .identity_content .show_p{
+    font-size: 0.24rem;
+    color: #333;
+    text-align: left;
+    margin-top:0.25rem;
+    line-height: 0.4rem;
+    text-indent: 0.5rem;
+}
+#Attention .real_name_fail.identity .identity_content .show_img{
+    display: block;
+    width: 100%;
+    height:3.3rem;
+    margin-top:0.3rem;
+}
+
+#Attention .real_name_fail.identity .identity_content .identity_result{
+    display: block;
+    width: 2.4rem;
+    margin:0 auto;
+}
+
+#Attention .real_name_fail.identity .identity_content .text{
+    margin-top:0.5rem;
+    line-height: 0.5rem;
+}
+#Attention .real_name_fail.identity .identity_content a{
+    display: block;
+    width: 5.6rem;
+    height:0.8rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    line-height: 0.8rem;
+    font-size: 0.28rem;
+    color: #fff;
+    margin:0 auto;
+    margin-bottom:0.3rem;
+}
+#Attention .real_name_fail.identity .identity_content a.Real_name{
+    background: #5e8ffc;
+    background: -webkit-gradient(linear, left top, right bottom, from(#5e8ffc), to(#5ec1fc));
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#5e8ffc), to(#5ec1fc));
+    background: -webkit-linear-gradient(left, #5e8ffc, #5ec1fc);
+    background: -moz-linear-gradient(left, #5e8ffc, #5ec1fc);
+    background: -o-linear-gradient(left, #5e8ffc, #5ec1fc);
+    background: -ms-linear-gradient(left, #5e8ffc, #5ec1fc);
+    margin-top:0.5rem;
+}
+
+#foot {
+    width: 100%;
+    height: 0.98rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background: #fff; }
+#foot .foot_nav {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #ccc;
+    position: relative;
+    z-index: 10;
+    background: #fff; }
+#foot .foot_nav:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both; }
+#foot .foot_nav li {
+    width: 20%;
+    height: 100%;
+    float: left; }
+#foot .foot_nav li a {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-box-lines: multiple;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-size: 0.2rem;
+    padding-top: 0.12rem;
+    color: #999;
+    text-align: center; }
+#foot .foot_nav li a.active {
+    color: #fc725e; }
+#foot .foot_nav li a.active .icon-yuanjiaojuxingkaobei {
+    display: none; }
+#foot .foot_nav li a.active .icon-yuanjiaojuxingkaobei2 {
+    display: block !important; }
+#foot .foot_nav li a.active .icon-yuanjiaojuxing1 {
+    display: none; }
+#foot .foot_nav li a.active .icon-yuanjiaojuxingkaobei1 {
+    display: block !important; }
+#foot .foot_nav li a.active .icon-yuanjiaojuxing {
+    display: none; }
+#foot .foot_nav li a.active .icon-icon-test1 {
+    display: block !important; }
+#foot .foot_nav li a.active .icon-tuoyuankaobei {
+    display: none; }
+#foot .foot_nav li a.active .icon-tuoyuankaobei1 {
+    display: block !important; }
+#foot .foot_nav li a .iconfont {
+    display: inline-block;
+    width: 100%;
+    font-size: 0.4rem; }
+#foot .foot_nav li a .iconfont.icon-yuanjiaojuxingkaobei2 {
+    display: none; }
+#foot .foot_nav li a .iconfont.icon-yuanjiaojuxingkaobei1 {
+    display: none; }
+#foot .foot_nav li a .iconfont.icon-icon-test1 {
+    display: none; }
+#foot .foot_nav li a .iconfont.icon-tuoyuankaobei1 {
+    display: none; }
+#foot .foot_nav li a .center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1.16rem;
+    height: 1.16rem;
+    border-radius: 50%;
+    background: #fff;
+    top: -0.49rem; }
+#foot .foot_nav li a .center .icon_phone {
+    display: block;
+    width: 0.6rem;
+    padding-top: 0.3rem;
+    margin: 0 auto; }
+#foot .foot_nav li a span {
+    width: 100%;
+    display: inline-block;
+    text-align: center; }
+#foot .foot_nav li a .center_text {
+    position: relative;
+    z-index: 10;
+    padding-top: 0.4rem; }
+#foot .garden {
+    width: 1.18rem;
+    height: 1.18rem;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+    top: -0.5rem; }

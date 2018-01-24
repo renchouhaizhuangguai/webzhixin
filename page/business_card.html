@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>绑定手机</title>
+    <!--showmessage-->
+    <link rel="stylesheet" href="../assets/wechat/css/animate.css">
+    <link rel="stylesheet" href="../assets/wechat/css/idangerous.swiper.css">
+    <link rel="stylesheet" href="../assets/wechat/css/rem.css">
+    <link rel="stylesheet" href="../assets/wechat/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../assets/wechat/css/public_style.css">
+</head>
+<body>
+<div id="app">
+    <div class="app_box">
+        <!--可以查-->
+        <div class="check">
+            <a href="query_enterprise.html" class="jump">查企业</a>
+            <i class="iconfont icon-sousuo"></i>
+            <div class="saoyisao">
+                <i class="iconfont icon-saoyisao01"></i>
+            </div>
+        </div>
+
+        <!--不可以查-->
+        <div class="check hide">
+            <input class="see_cer" type="button" value="查企业">
+            <i style="left:2.7rem;" class="iconfont icon-sousuo"></i>
+        </div>
+
+        <p class="showMessage">
+            右 滑 查 看 下 一 家 企 业
+        </p>
+        <div class="call_template">
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div data-delay="1" class="call_content swiper-slide">
+                        <div class="img_template" style="background-image: url('../assets/wechat/img/news_background.png')">
+                            <img class="white" src="../assets/wechat/img/news_white.png" alt="">
+                            <div class="Head_portrait" style="background-image: url('../assets/wechat/img/news_Head_portrait.png')"></div>
+
+                            <div class="Mask">
+                                <div class="per_name">
+                                    <div class="enter_logo">
+                                        <img src="../assets/wechat/img/news_logo.png" alt="">
+                                    </div>
+                                    <!--企业名字没有别名-->
+                                    <strong class="name">上海履途网络科技有限公司</strong>
+                                    <!--企业名字有别名-->
+                                    <div class="alias hide">
+                                        <strong>职信网</strong>
+                                        <p>上海履途网络科技有限公司</p>
+                                    </div>
+                                </div>
+
+                                <img class="show" src="../assets/wechat/img/xiu-2.gif" alt="">
+                            </div>
+
+                        </div>
+                        <div class="zx_template_content">
+                            <h3 class="name">刘娉婷<span>Lucy</span></h3>
+                            <p class="position">
+                                <span>总裁办</span><span>CEO</span>
+                            </p>
+                            <div class="zx_Authentication">
+                                <div class="v v_lang">
+                                    <a href="">
+                                        <img src="../assets/wechat/img/v_lang.png" alt="">
+                                        <span>实名认证</span>
+                                    </a>
+                                </div>
+                                <div class="v">
+                                    <a href="">
+                                        <img src="../assets/wechat/img/v.png" alt="">
+                                        <span>职位认证</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <a class="zx_edit" href="">编辑</a>
+                        </div>
+                    </div>
+                    <div data-delay="2" class="call_content swiper-slide">
+                        <div class="img_template" style="background-image: url('../assets/wechat/img/news_background.png')">
+                            <img class="white" src="../assets/wechat/img/news_white.png" alt="">
+                            <div class="Head_portrait" style="background-image: url('../assets/wechat/img/news_Head_portrait.png')"></div>
+
+                            <div class="Mask">
+                                <div class="per_name">
+                                    <div class="enter_logo">
+                                        <img src="../assets/wechat/img/news_logo.png" alt="">
+                                    </div>
+                                    <!--企业名字没有别名-->
+                                    <strong class="name">上海履途网络科技有限公司</strong>
+                                    <!--企业名字有别名-->
+                                    <div class="alias hide">
+                                        <strong>职信网</strong>
+                                        <p>上海履途网络科技有限公司</p>
+                                    </div>
+                                </div>
+                                <img class="show" src="../assets/wechat/img/xiu-2.gif" alt="">
+                            </div>
+
+                        </div>
+                        <div class="zx_template_content">
+                            <h3 class="name">刘娉婷<span>Lucy</span></h3>
+                            <p class="position">
+                                <span>总裁办</span><span>CEO</span>
+                            </p>
+                            <div class="zx_Authentication">
+                                <div class="v v_lang">
+                                    <a href="">
+                                        <img src="../assets/wechat/img/v_lang.png" alt="">
+                                        <span>实名认证</span>
+                                    </a>
+                                </div>
+                                <div class="v">
+                                    <a href="">
+                                        <img src="../assets/wechat/img/v.png" alt="">
+                                        <span>职位认证</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <a class="zx_edit" href="">编辑</a>
+                        </div>
+                    </div>
+                    <div data-delay="3" class="call_content swiper-slide">
+                        <div class="img_template" style="background-image: url('../assets/wechat/img/news_background.png')">
+                            <img class="white" src="../assets/wechat/img/news_white.png" alt="">
+                            <div class="Head_portrait" style="background-image: url('../assets/wechat/img/news_Head_portrait.png')"></div>
+
+                            <div class="Mask">
+                                <div class="per_name">
+                                    <div class="enter_logo">
+                                        <img src="../assets/wechat/img/news_logo.png" alt="">
+                                    </div>
+                                    <!--企业名字没有别名-->
+                                    <strong class="name">上海履途网络科技有限公司</strong>
+                                    <!--企业名字有别名-->
+                                    <div class="alias hide">
+                                        <strong>职信网</strong>
+                                        <p>上海履途网络科技有限公司</p>
+                                    </div>
+                                </div>
+                                <img class="show" src="../assets/wechat/img/xiu-2.gif" alt="">
+                            </div>
+
+                        </div>
+                        <div class="zx_template_content">
+                            <h3 class="name">刘娉婷<span>Lucy</span></h3>
+                            <p class="position">
+                                <span>总裁办</span><span>CEO</span>
+                            </p>
+                            <div class="zx_Authentication">
+                                <div class="v v_lang">
+                                    <a href="">
+                                        <img src="../assets/wechat/img/v_lang.png" alt="">
+                                        <span>实名认证</span>
+                                    </a>
+                                </div>
+                                <div class="v">
+                                    <a href="">
+                                        <img src="../assets/wechat/img/v.png" alt="">
+                                        <span>职位认证</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <a class="zx_edit" href="">编辑</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination"></div>
+            </div>
+
+
+        </div>
+        <div class="zx_body">
+            <ul class="body_ul">
+                <li class="li_box">
+                    <i class="iconfont icon-shouji"></i>
+                    <span>15267896789</span>
+                    <a tel="15267896789" class="iconfont icon-dianhua"></a>
+                </li>
+                <li class="li_box">
+                    <i class="iconfont icon-e"></i>
+                    <span class="foo1">15267896789</span>
+                    <button  class="clipboard" data-clipboard-target=".foo1">
+                        <a class="iconfont icon-fuzhi"></a>
+                    </button>
+                </li>
+                <li class="li_box">
+                    <i class="iconfont icon-dizhi"></i>
+                    <span title="上海市徐汇区钦州北路1199弄87号楼" class="address">上海市徐汇区钦州北路1199弄87号楼</span>
+                    <a href="" class="iconfont icon-iconfontjiantou"></a>
+                </li>
+                <li class="li_box">
+                    <i class="iconfont icon-dianhua1" style="font-size: 0.38rem"></i>
+                    <span>15267896789</span>
+                    <a href="" class="iconfont icon-dianhua"></a>
+                </li>
+                <li class="li_box">
+                    <i class="iconfont icon-weixin"></i>
+                    <span class="foo2">15267896789</span>
+                    <button  class="clipboard" data-clipboard-target=".foo2">
+                        <a class="iconfont icon-fuzhi"></a>
+                    </button>
+                </li>
+                <li class="li_box">
+                    <i class="iconfont icon-youxiang"></i>
+                    <span class="foo3">15267896789</span>
+                    <button  class="clipboard" data-clipboard-target=".foo3">
+                        <a class="iconfont icon-fuzhi"></a>
+                    </button>
+                </li>
+                <li class="li_box li_last">
+                    <i class="iconfont icon-gerenjianjie"></i>
+                    <p class="p_text">个人简介：<span></span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!--底部tab-->
+<footer id="foot">
+    <ul class="foot_nav">
+        <li>
+            <a href="business_card.html" class="active">
+                <i class="iconfont icon-yuanjiaojuxingkaobei"></i><i class="iconfont icon-yuanjiaojuxingkaobei2"></i>
+                <span>名片</span>
+            </a>
+        </li>
+        <li>
+            <a href="call_Clip.html">
+                <i class="iconfont icon-yuanjiaojuxing1"></i><i class="iconfont icon-yuanjiaojuxingkaobei1"></i>
+                <span>名片夹</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0);">
+                <i class="center"><img class="icon_phone" src="../assets/wechat/img/phone.png" alt=""></i>
+                <span class="center_text">存名片</span>
+            </a>
+        </li>
+        <li>
+            <a href="personal_see.html">
+                <i class="iconfont icon-yuanjiaojuxing"></i><i class="iconfont icon-icon-test1"></i>
+                <span>查个人</span>
+            </a>
+        </li>
+        <li>
+            <a href="personal_home.html">
+                <i class="iconfont icon-tuoyuankaobei"></i><i class="iconfont icon-tuoyuankaobei1"></i>
+                <span>我的</span>
+            </a>
+        </li>
+    </ul>
+    <div class="garden"></div>
+</footer>
+
+<!--底部查看名片夹-->
+<div id="zx_see" class="hide">
+    <div class="btn_see hide">
+        <p>您已添加过Ta的名片了</p>
+        <button class="btn _gradient">查看名片夹</button>
+    </div>
+    <div class="btn_Deposit ">
+        <p>存好友名片、随时查看管理</p>
+        <button class="btn _gradient">存入名片夹</button>
+    </div>
+</div>
+
+<!--删除好友-->
+<div id="zx_delete" class="hide">
+    <button>删除好友</button>
+</div>
+
+
+
+
+<!--模态款-->
+<div id="Attention">
+    <!--提醒加入公众号-->
+    <div class="Attention">
+        <p class="p_follow">关注公众号</p>
+        <h3>将好友名片存入名片夹</h3>
+        <p>长按图片<i class="iconfont icon-changjiantou"></i>识别二维码<i class="iconfont icon-changjiantou"></i>保存完成</p>
+        <div class="ewm">
+            <img src="../assets/wechat/img/ewm.jpg" alt=""/>
+        </div>
+        <div class="fingerprint">
+            <i class="iconfont icon-zhiwenjiesuo"></i>
+            <span>长按识别</span>
+        </div>
+        <div class="foot_b">
+            <span>若未关注<span  class="c_ff">【职信平台】</span>公众号 <br> 点击关注即可保存完成</span>
+        </div>
+        <i class="iconfont icon-cha btn_xx"></i>
+    </div>
+    <!--删除好友-->
+    <div class="confirm_delete">
+        <p>确认删除此名片吗？</p>
+        <ul>
+            <li class="delte">确认</li>
+            <li class="cancel">取消</li>
+        </ul>
+    </div>
+    <!--公司简介-->
+    <div class="real_name_fail identity show">
+        <div class="identity_head">
+            <img src="../assets/wechat/img/jiantou_right.png" alt="">
+            <strong>身份认证</strong>
+            <img src="../assets/wechat/img/jiantou-left.png" alt="">
+        </div>
+        <div class="identity_content">
+            <div class="show_con">
+                <h4 class="show_h4">公司简介</h4>
+                <p class="show_p">
+                    职信网致力于弘扬中华诚信文化，推动社会职业诚信体系建设，为个人和企业创造信用财富。
+                </p>
+                <img class="show_img" src="../assets/wechat/img/333333.jpg" alt="">
+                <h4 class="show_h4">我们的服务具有以下特点</h4>
+                <p class="show_p">
+                    权威性：不同于传统职业背景调查公司通过口口相传出具调查报告，我们的职信报告由企业背书，即每一段经历皆在对应的企业进不同于传统职业背景调查公司通过口口相传出具调查报告
+                </p>
+                <p class="show_p">
+                    权威性：不同于传统职业背景调查公司通过口口相传出具调查报告，我们的职信报告由企业背书，即每一段经历皆在对应的企业进不同于传统职业背景调查公司通过口口相传出具调查报告
+                </p>
+            </div>
+        </div>
+        <div class="position_xx">
+            <i class="iconfont icon-iconfontguanbi"></i>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
+<script src="../assets/wechat/js/jquery-1.9.1.min.js"></script>
+<!--showmessage-->
+<script src="../assets/wechat/js/toast.js"></script>
+<!--复制-->
+<script src="../assets/wechat/js/clipboard.js"></script>
+<!--公共部分-->
+<script src="../assets/wechat/js/public.js"></script>
+<!--swiper-->
+<script src="../assets/wechat/js/swiper-3.4.2.jquery.min.js"></script>
+<script>
+    $(function () {
+        //复制
+        var clipboard = new Clipboard('.clipboard');
+        clipboard.on('success', function(e) {
+            showMessage('已复制到粘贴板！',1500,true);
+        });
+        clipboard.on('error', function(e) {
+            showMessage('复制失败，请重新操作！',1500,true);
+        });
+
+        //设置内容是不否出现
+        var body_ul_li=$('.body_ul .li_box span');
+        render(body_ul_li);
+        function render(el) {
+            el.each(function (i,v) {
+                if($(v).text()==''){
+                    $(v).parents('.li_box').css('display','none')
+                }else{
+                    $(v).parents('.li_box').css('display','flex')
+                }
+            });
+        }
+
+        //存放数据
+        var data=[
+            {
+                id:1,
+                phone:'18545sdfasdwewe6132',
+                Website:'你家',
+                address:'你家',
+                Fixed:'4897m',
+                WeChat:'weixin456456',
+                mailbox:'185789789￥fd.com',
+                profile:'我是可以的股份的公司11'
+            },
+            {
+                id:2,
+                phone:'18545sdfasdwewe6132',
+                Website:'你家',
+                address:'你家',
+                Fixed:'4897m',
+                WeChat:'weixin456456',
+                mailbox:'185789789￥fd.com',
+                profile:'我是可以的股份的公司22'
+            },
+            {
+                id:3,
+                phone:'18545sdfasdwewe6132',
+                Website:'你家',
+                address:'你家',
+                Fixed:'4897m',
+                WeChat:'weixin456456',
+                mailbox:'185789789￥fd.com',
+                profile:'我是可以的股份的公司33'
+            }
+        ];
+        var swiper_container=$('.swiper-container .call_content');
+        var showMessage=$('.showMessage');
+        //设置名片切换，动态更新数据
+        if(swiper_container.length<=1){
+            showMessage.hide();
+        }else{
+            showMessage.show();
+            var index=null;
+            var mySwiper = new Swiper('.swiper-container',{
+                onTransitionStart: function(swiper,even){
+                    $('.call_content').each(function (i,v) {
+                        if($(v).hasClass('swiper-slide-active')){
+                            index=$(v).attr('data-delay');
+                            var news_data= data.filter(function (v) {
+                                return v.id==index;
+                            });
+                            body_ul_li.eq(0).text(news_data[0].phone);
+                            body_ul_li.eq(1).text(news_data[0].Website);
+                            body_ul_li.eq(2).text(news_data[0].address);
+                            body_ul_li.eq(3).text(news_data[0].Fixed);
+                            body_ul_li.eq(4).text(news_data[0].WeChat);
+                            body_ul_li.eq(5).text(news_data[0].mailbox);
+                            body_ul_li.eq(6).text(news_data[0].profile);
+                            render(body_ul_li);
+                        }
+                    })
+                },
+                pagination: '.pagination',
+                loop:true,
+                grabCursor: true,
+                paginationClickable: true,
+            });
+        }
+
+
+
+
+        var zx_see=$('#zx_see');
+        var btn_See=zx_see.find('.btn_see .btn');
+        var btn_Deposit=zx_see.find('.btn_Deposit .btn');
+        var see_cer=$('.see_cer');
+        var zx_delete=$('#zx_delete');
+        var show=$('.call_content .show');
+
+        //秀弹出框
+        var module4=new Module();
+        module4.init('fail');
+        show.on('click',function () {
+            module4.Appear('fail');
+        });
+
+        //查看名片夹
+        var module=new Module();
+        module.init('active');
+        btn_See.on('click',function () {
+            module.Appear('active');
+        })
+
+        //存入名片夹
+        var module1=new Module('3');
+        module1.init('active');
+        btn_Deposit.on('click',function () {
+            module1.Appear('active');
+        })
+
+        //查企业
+        var module2=new Module('2');
+        module2.init('active');
+        see_cer.on('click',function () {
+            module2.Appear('active');
+        })
+
+        //删除好友
+        var module3=new Module();
+        module3.init('delete');
+        zx_delete.on('click',function () {
+            module3.Appear('delete');
+        })
+    });
+
+</script>

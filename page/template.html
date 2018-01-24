@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>绑定手机</title>
+    <link rel="stylesheet" href="../assets/wechat/css/animate.css">
+    <link rel="stylesheet" href="../assets/wechat/css/rem.css">
+    <link rel="stylesheet" href="../assets/wechat/css/Template.css">
+</head>
+<body>
+<p class="p_one">如需自定义企业名片模板请联系客服：4000013129</p>
+<section>
+    <div class="Template">
+        <ul>
+            <li>
+                <div class="img" style="background-image: url('../assets/wechat/img/333333.jpg');"></div>
+                <div class="li_box"></div>
+                <img class="ok" src="../assets/wechat/img/news_duigou.png" alt=""/>
+            </li>
+            <li>
+                <div class="img" style="background-image: url('../assets/wechat/img/333333.jpg');"></div>
+                <div class="li_box"></div>
+                <img class="ok" src="../assets/wechat/img/news_duigou.png" alt=""/>
+            </li>
+            <li>
+                <div class="img" style="background-image: url('../assets/wechat/img/333333.jpg');"></div>
+                <div class="li_box"></div>
+                <img class="ok" src="../assets/wechat/img/news_duigou.png" alt=""/>
+            </li>
+        </ul>
+    </div>
+</section>
+<div class="foot">
+    <button class="btn">保存</button>
+</div>
+</body>
+</html>
+<script src="../assets/wechat/js/jquery-1.9.1.min.js"></script>
+<!--showmessage-->
+<script src="../assets/wechat/js/toast.js"></script>
+<script>
+    $(function () {
+        var li = $('.Template li');
+        li.on('click', function () {
+            $('.li_box,.ok').removeClass('active');
+            $(this).find('.li_box,.ok').addClass('active');
+        })
+    })
+</script>
